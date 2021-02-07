@@ -1,0 +1,520 @@
+// Farger
+$background: #17171F;
+$elementcolor1: #39BCBB;
+$elementcolor2: #A82225;
+
+// Layout
+$padding: 1em;
+$border-radius: 2em;
+
+$sectionheight: 100vh;
+$sectionwidth: 100vw;
+$mobile-width: 80vw;
+$right-move: 25vw;
+$bottom-move: 10vh;
+$front: 100;
+$back: 10;
+
+// Ikoner
+$icon-size: 40px;
+
+// Breakpoint for mobil
+$mobile: 418px;
+$desktop: 1024px;
+
+// Typografi
+$font: 'Josefin Sans';
+$font-size: 1em;
+$paragraph-width: 35vw;
+$line-height: 1.2em;
+
+
+// Sjekk denne
+@font-face {
+	font-family: $font;
+	src: url('../assets/JosefinSans-VariableFont_wght.ttf');
+	font-weight: normal;
+    font-style: regular;
+}
+    
+
+/* TO DO: FLYTTES TIL EGEN SCSS FIL */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	font-size: inherit;
+	font-weight: normal;
+}
+
+button {
+	font: inherit;
+	border: 0;
+    text-align: left;
+}
+
+/** **/
+
+*, html {
+    scroll-snap-type: Y mandatory;
+}
+
+body {
+    width: $sectionwidth;
+    background-color: $background;
+    background-image: url("../img/bakgrunn.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    font-family: $font;
+    z-index: 10;
+}
+
+@media (max-width: $mobile) {
+    body {
+        background-image: url("../img/mobil-bakgrunn.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: top;
+        background-size: cover;
+    }
+}
+
+// Text
+h1 {
+    font-size: $font-size * 3.5;
+	transform: translateX(0) rotate(-45deg);
+	color: $elementcolor1;
+	position: relative;
+	left: $right-move / 6;
+}
+
+@media (max-width: $mobile) {
+    h1 {
+        font-size: $font-size * 2.5;
+		line-height: $line-height;
+		width: $mobile-width;
+		left: none;
+    }
+}
+
+
+h2 {
+    font-size: $font-size * 2.5;
+	color: $elementcolor2;
+	line-height: $line-height;
+}
+
+@media (max-width: $mobile) {
+    h2 {
+		font-size: $font-size * 2;
+    }
+}
+
+h3 {
+	font-size: $font-size * 2;
+	color: $elementcolor1;
+}
+
+@media (max-width: $mobile) {
+    h3 {
+        font-size: $font-size * 1.5;
+		width: $mobile-width;
+		line-height: $line-height;
+    }
+}
+
+p {
+    font-size: $font-size * 2;
+	width: $paragraph-width;
+	line-height: $line-height;
+	color: $elementcolor1;
+	text-align: left;
+	position: relative;
+}
+
+@media (max-width: $mobile) {
+    p {
+        font-size: $font-size * 1.5;
+		width: $paragraph-width * 2;
+    }
+}
+
+a {
+	font-size: $font-size * 2.5;
+	text-decoration: none;
+	color: $background;
+	position: relative;
+	z-index: $front;
+}
+
+@media (max-width: $mobile) { 
+    a {
+        font-size: $font-size * 1.2;   
+    }
+}
+
+.marked {
+    color: $elementcolor2; 
+}
+ 
+// Sections
+section {
+    width: $sectionwidth;
+	height: $sectionheight;
+	display: grid;
+	place-items: center;
+	scroll-snap-align: center;
+}
+
+@media (max-width: $mobile) { 
+    section {
+        scroll-snap-align: none;
+    }
+}
+
+.intro {
+    .intro-container {
+        position: relative;
+	    bottom: - $bottom-move * 3;
+        right: $right-move / 1.2;
+    }
+    .some-tagline {
+        color: $elementcolor1;
+    }
+    @media (max-width: $mobile) { 
+        .intro-container {
+            bottom: none;
+            right: $right-move / 40;
+            width: $mobile-width;
+        }
+    }
+    
+}
+
+.story-1 {
+    .story-text-1 {
+        right: $right-move;
+	    bottom: $bottom-move / 2;
+    }
+    .letter {
+        color: $elementcolor1; 
+    }
+    @media (max-width: $mobile) { 
+        .story-text-1 {
+            bottom: none;
+            right: $right-move / 4;
+        }
+    }
+}
+
+.story-2 {
+    .story-text-2 {
+        color: $background;
+        right: - $right-move;
+        bottom: $bottom-move / 2;
+    }
+    span {
+        color: $background;
+    }
+    @media (max-width: $mobile) { 
+        .story-text-2 {
+            bottom: none;
+            right: $right-move / 4;
+        }
+    }
+}
+
+@media (max-width: $mobile) { 
+    .story-2 {
+        background-color: $elementcolor2;
+    }
+}
+
+.story-3 {
+    .story-text-3 {
+        right: $right-move;
+	    bottom: $bottom-move / 2;
+    }
+    .letter {
+        color: $elementcolor1; 
+    }
+    @media (max-width: $mobile) { 
+        .story-text-3 {
+            bottom: none;
+            right: $right-move / 4;
+        }
+    }
+}
+
+.story-4 {
+    .story-text-4 {
+        color: $background;
+        right: - $right-move;
+        bottom: $bottom-move / 2;
+    }
+    span {
+        color: $background;
+    }
+    @media (max-width: $mobile) { 
+        .story-text-4 {
+            bottom: none;
+		    right: $right-move / 4;
+        }
+    }
+}
+
+
+@media (max-width: $mobile) { 
+    .story-4 {
+        background-color: $elementcolor1;
+    }
+}
+
+.story-5 {
+    .story-text-5 {
+        text-align: center;
+	    bottom: $bottom-move * 2;
+	    width: $paragraph-width * 2;
+    }
+    @media (max-width: $mobile) { 
+        .story-text-5 {
+            bottom: - $bottom-move
+        }
+    }
+}
+
+.fish {
+    .fish-container {
+        height: $sectionheight / 1.5;
+        width: $sectionwidth;
+        display: grid;
+        place-items: center;
+    }
+    .link {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: $padding;
+        width: $paragraph-width;
+        position: relative;
+        bottom: $bottom-move * 3.6;
+        right: - $right-move / 5;
+        z-index: $front;
+    }
+
+    @media (max-width: $mobile) { 
+        .link {
+            bottom: $bottom-move * 3.3;
+		    width: $paragraph-width / 2;
+		    right: $right-move / 3.5;
+        }
+    }
+
+    .rethinking {
+        color: $elementcolor1;
+        cursor: pointer;
+    }
+
+    .hashtag {
+        bottom: $bottom-move * 3.2;
+	    right: $right-move / 10;
+	    font-size: $font-size * 2;
+    }
+
+    @media (max-width: $mobile) { 
+        .hashtag {
+            bottom: $bottom-move * 3.3;
+            font-size: $font-size;       
+        }
+    }
+
+    .red {
+        z-index: $back;
+        width: $paragraph-width * 1.5;
+        transition: 0.2s all;
+        position: relative;
+    }
+    @media (max-width: $mobile) { 
+        .red {
+            width: $paragraph-width * 2.5;
+		    bottom: none;
+        }
+    }
+
+    .blue {
+        z-index: $back;
+        width: $paragraph-width;
+        transition: 0.2s all;
+        position: relative;
+    }
+
+    @media (max-width: $mobile) { 
+        .blue {
+            bottom: none;
+            width: $paragraph-width * 2;
+        }
+    }
+
+    .red:hover, .blue:hover {
+        transform: scale(1.1); 
+    }
+    .arrow {
+        width: $icon-size;
+    }
+}
+
+.rules {
+    .rules-container {
+        display: grid;
+        gap: $padding * 2;
+        position: relative;
+    }
+
+    @media (max-width: $mobile) { 
+        .rules-container {
+            bottom: $bottom-move * 8;
+            width: $mobile-width;
+        }
+    }
+}
+
+.videoshow {
+    .video {
+        border-radius: 8px;
+        position: relative;
+    }
+    
+    @media (max-width: $mobile) {
+        .video {
+            width: 80vw;
+        }
+    }
+}
+
+.footer {
+    .footer-container {
+        display: grid;
+        grid-template-columns: auto;
+        place-content: center;
+        position: relative; 
+    }
+
+    @media (max-width: $mobile) { 
+        .footer-container {
+            bottom: none;
+        }
+    }
+
+    .icons {
+        display: grid;
+        place-content: center;
+        grid-template-columns: auto auto auto;
+        gap: $padding;
+        padding-bottom: $padding * 6;
+    }
+
+    .so-me {
+    	color: $elementcolor1;
+	    font-size: $font-size * 2;
+    }
+
+    @media (max-width: $mobile) { 
+        .so-me {
+            font-size: $font-size * 1.5;
+        }
+    }
+
+    .footer-text, .emails {
+        text-align: center;
+        font-size: $font-size * 1.5;
+        padding-bottom: $padding;
+        width: $paragraph-width * 2;
+    }
+    
+    @media (max-width: $mobile) { 
+        .footer-text, .emails {
+            font-size: $font-size;
+        }
+    }
+
+    .email-link {
+        cursor: pointer;
+    }
+
+    .email-link:hover {
+        text-decoration: underline;
+    }
+
+    .instagram {
+        width: 60px;
+        transition: 0.2s all;
+        cursor: pointer; 
+    }
+
+    .facebook {
+        width: 60px;
+        transition: 0.2s all;
+        cursor: pointer; 
+    }
+
+    .instagram:hover, .facebook:hover {
+        transform: scale(1.1); 
+    }
+}
+
+// Gaps
+.intro-gap {
+    height: $sectionheight / 2;
+    width: $sectionwidth;
+}
+.hand-gap, .mask-gap, .gap-fish, .gap-small, .gap-small-2 {
+    height: $sectionheight;
+    width: $sectionwidth;
+}
+
+@media (max-width: $mobile) { 
+    .mask-gap {
+        height: $sectionheight / 2.5;
+        background-color: $elementcolor1;
+        background: url("../img/mask.png") no-repeat center top;
+        background-attachment: fixed;
+        z-index: $front;
+    }
+}
+
+.code-gap {
+    height: $sectionheight * 2.5;
+    width: $sectionwidth;
+}
+
+@media (max-width: $mobile) { 
+    .code-gap {
+        height: $sectionheight / 2.5;
+        background: url("../img/code-branch.png") no-repeat center top;
+        background-attachment: fixed;
+        z-index: $front;
+    }
+}
+
+.hate-gap {
+    height: 0;
+}
+
+@media (max-width: $mobile) { 
+    .hate-gap {
+        height: $sectionheight / 2.5;
+        background: url("../img/hate.png") no-repeat center top;
+        background-attachment: fixed;
+        z-index: $front;
+    }
+}
+
+.gap-small-2 {
+    background-color: $background; 
+}
+ 
