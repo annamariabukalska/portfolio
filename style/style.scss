@@ -1,7 +1,9 @@
-// Farger
-$background: #17171F;
-$elementcolor1: #39BCBB;
-$elementcolor2: #A82225;
+@import 'colors';
+@import 'ommeg';
+@import 'footer';
+@import 'logo';
+@import 'project';
+@import 'typography';
 
 // Layout
 $padding: 1em;
@@ -10,12 +12,6 @@ $border-radius: 2em;
 // Breakpoint for mobil
 $mobile: 418px;
 $desktop: 1024px;
-
-// Typografi
-$font: 'Montserrat';
-$font-size: 1em;
-$paragraph-width: 35vw;
-$line-height: 1.2em;
 
 * {
 	box-sizing: border-box;
