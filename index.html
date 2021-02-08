@@ -4,47 +4,75 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Annas Portfolio</title>
-	<meta name="description"
-		content="Annas design">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat">
+	<title>Anna Maria Bukalska - Portfolio</title>
+	<meta name="description" content="Annas design">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="/style/style.css">
-	<!-- Google Tag Manager -->
-	
-	<!-- End Google Tag Manager -->
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	
-
-	<!-- Hotjar Tracking Code  -->
-
-
+	<link rel="stylesheet" href="/style/style.scss">
 </head>
 
 <body>
 	<main>
 		<section class="header">
-			<h1 class="title"><span class="marked">IKKE TA ALT</span> FOR GOD FISK</h1>
+			<h1 class="title">ANNA</h1>
 		</section>
 
+		<nav class="navbar" id="bar">
+            <span class="navbar-toggle" id="js-navbar-toggle"></span>
+            
+            <ul class="main-nav" id="js-menu">
+                <li id="kontakt">
+                    <a class="underline" href="#" class="nav-links">Om meg</a>
+                </li>
+            </ul>
+        </nav>
 		
+		<section class="info">Interaksjonsdesign</section>
+
+		<div class="horisontal_slider">
+			<div class="slider_container">
+				<div class="item">
+					<img src="/resources/polarisering.jpg">
+				</div>
+				<div class="item">
+					<img src="/resources/lokalbefolkning.png">
+				</div>
+				<div class="item">
+					<img src="/resources/polarisering.jpg">
+				</div>
+				<div class="item">
+					<img src="/resources/lokalbefolkning.png">
+				</div>
+			</div>
+		</div>
+
+
+		<section class="text">Jeg er interaksjonsdesigner med bachelor i Informatikk: design, bruk og iterasjon fra Universitetet i Oslo . UX-designer som elsker å forbedre hverdagen til brukere. Opptatt av å designe og teste gode løsninger som er universelt utformet. Jeg elsker å jobbe med både webdesign, konseptutvikling og … . Ved siden av interaksjonsdesign driver jeg med... Ta gjerne kontakt for å bli bedre kjent! 
+		</section>
+
+		<section class="picture"></section>
+
+		<div class="anna">
+			<img src="/resources/anna.png">
+		</div>
 
 		<section class="icons">
-			<p class="emails"><span class="email-link" onclick="emailAnna()">annamariabukalska@gmail.com</span>
-			<img src="./img/icon-github.png" class="github" alt="github" onclick="opengithub()">
-			<img src="./img/icon-linkedin.png" class="linkedin" alt="linkedin" onclick="openlinkedin()">
+			<img src="resources/icon-email.png" class="emails" alt="emails" class="email-link" onclick="emailAnna()" >
+				<img src="resources/icon-github.png" class="github" alt="github" onclick="openGitHub()">
+				<img src="resources/icon-linkedin.png" class="linkedin" alt="linkedin" onclick="openlinkedin()">
 		</section>
 
 		<section class="footer">
 			<div class="footer-container">
 				<p class="footer-text">2021 Designet og kodet av Anna Maria Bukalska</p>
-				
-				</div>
+				<a href="./index.html" class="footer-text2">.Bukalska</a>
 			</div>
+
 		</section>
 	</main>
 
 	<script type="text/javascript" src="js/app.js"></script>
 
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 {
-   "name": "motpolarisering",
-   "description": "Prosjekt for digital markedsføring @ Fagskole Kristiania",
+   "name": "portfolio",
+   "description": "Min portfolio",
    "version": "1.0.0",
    "scripts": {
       "scss": "node-sass style/style.scss -o style/",
@@ -10,7 +10,7 @@
    "dependencies": {
       "node-sass": "^5.0.0"
    },
-   "author": "Anna & Camilla",
+   "author": "Anna Maria Bukalska",
    "devDependencies": {
       "concurrently": "^5.3.0",
       "http-server": "^0.12.3"
