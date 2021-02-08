@@ -18,27 +18,18 @@ $desktop: 1024px;
 	margin: 0;
     padding: 0;
 }
+
 body {
 	font-family: $font;
+	background: $background;
+	a {
+		text-decoration: none;
+	}
+
 }
 
 .top-info {
 	text-align: center;
-}
-
-.container {
-	position: relative;
-	width: 100%;
-	display: flex;
-}
-
-.container section {
-	min-width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	align-self: center;
-	height: 100vh;
 }
 
 .horisontal_slider {
@@ -53,19 +44,64 @@ body {
 	display: block;
 	white-space: nowrap;
 }
-.item {
-	display: inline-block;
+
+.portfolio-preview {
+	display: inline-grid;
 	margin-right: 10px;
-	
-}
-.item img {
+	max-height: 600px;
 	width: 400px;
+
+	.portfolio-preview-title {
+		font-size: 20pt;
+		color: black;
+	}
+
+	.portfolio-preview-image {
+		border-radius: 5px;
+		width: 100%;
+	}
+
+	.title-pink {
+		background: linear-gradient(to top, $pink 60%, transparent 60%) no-repeat;
+	}
+
+	.title-green {
+		background: linear-gradient(to top, $green 60%, transparent 60%) no-repeat;
+	}
+
+	.title-red {
+		background: linear-gradient(to top, $red 60%, transparent 60%) no-repeat;
+	}
+
+	.title-blue {
+		background: linear-gradient(to top, $blue 60%, transparent 60%) no-repeat;
+	}
+
+	.title-orange {
+		background: linear-gradient(to top, $orange 60%, transparent 60%) no-repeat;
+	}
+
+
 }
 
+.text {
+	height:100vh;
+    width:50vw;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+	padding-left: 50px;
+	line-height: 1.2;
+}
 .emails, .linkedin, .github {
 	cursor: pointer;
     width: 2rem;
-    margin-right: .5rem;
+    margin-right: .10rem;
     margin-top: 3rem;
     margin-bottom: 6.5rem;
+}
+
+.anna {
+	width: 400px;
+    align-content: center;
 }

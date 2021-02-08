@@ -8,12 +8,17 @@
   grid-row-start: row1-start;
   grid-row-end: 3;
   font-family: $font;
-}
+  
+  .logo {
+  color: black;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
 
-#navbar ul li {
-  list-style-type: none;
-}
+  .nav-links {
+    text-decoration: none;
+  }
 
-.nav-links {
-  text-decoration: none;
 }
