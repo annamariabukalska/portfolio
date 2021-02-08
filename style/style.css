@@ -4,28 +4,32 @@
 .footer {
   width: 100vw;
   height: 50vh;
-  background-color: #A82225;
+  background-color: #B5C7E2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  font-family: "Montserrat", serif; }
 
-.title .header {
+#navbar {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
   grid-column-start: 2;
   grid-column-end: five;
   grid-row-start: row1-start;
-  grid-row-end: 3; }
-
-.emails .linkedin .github {
-  width: 5rem;
-  margin-right: .5rem;
-  margin-top: 3rem;
-  margin-bottom: 6.5rem; }
+  grid-row-end: 3;
+  font-family: "Montserrat", serif; }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
+
+body {
+  font-family: "Montserrat", serif; }
 
 .container {
   position: relative;
@@ -58,3 +62,10 @@
 
 .item img {
   width: 400px; }
+
+.emails, .linkedin, .github {
+  cursor: pointer;
+  width: 2rem;
+  margin-right: .5rem;
+  margin-top: 3rem;
+  margin-bottom: 6.5rem; }

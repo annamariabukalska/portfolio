@@ -1,9 +1,9 @@
 @import 'colors';
+@import 'typography';
 @import 'ommeg';
 @import 'footer';
-@import 'logo';
+@import 'navbar';
 @import 'project';
-@import 'typography';
 
 // Layout
 $padding: 1em;
@@ -18,14 +18,17 @@ $desktop: 1024px;
 	margin: 0;
     padding: 0;
 }
+body {
+	font-family: $font;
+}
 
-.container{
+.container {
 	position: relative;
 	width: 100%;
 	display: flex;
 }
 
-.container section{
+.container section {
 	min-width: 100%;
 	height: auto;
 	display: flex;
@@ -34,7 +37,7 @@ $desktop: 1024px;
 	height: 100vh;
 }
 
-.horisontal_slider{
+.horisontal_slider {
 	display: block;
 	width: 100%;
 	overflow-x: scroll;
@@ -42,14 +45,22 @@ $desktop: 1024px;
 	padding: 20px;
 	box-sizing: border-box;
 }
-.slider_container{
+.slider_container {
 	display: block;
 	white-space: nowrap;
 }
-.item{
+.item {
 	display: inline-block;
 	margin-right: 10px;
 }
-.item img{
+.item img {
 	width: 400px;
+}
+
+.emails, .linkedin, .github {
+	cursor: pointer;
+    width: 2rem;
+    margin-right: .5rem;
+    margin-top: 3rem;
+    margin-bottom: 6.5rem;
 }

@@ -1,0 +1,14 @@
+#navbar {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+  font-family: $font;
+}
+
+
