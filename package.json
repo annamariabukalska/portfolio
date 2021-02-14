@@ -2,6 +2,7 @@
    "name": "portfolio",
    "description": "Min portfolio",
    "version": "1.0.0",
+   "type": "module",
    "scripts": {
       "scss": "node-sass style/style.scss -o style/",
       "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/\"",

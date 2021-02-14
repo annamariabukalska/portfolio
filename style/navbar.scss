@@ -1,24 +1,37 @@
 #navbar {
+  display: grid;
   padding-top: 50px;
   padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  grid-column-start: 2;
-  grid-column-end: five;
-  grid-row-start: row1-start;
-  grid-row-end: 3;
+  grid-template-columns: 1fr repeat(3, auto) 1fr;
+  grid-column-gap: 5px;
+  justify-items: center;
   font-family: $font;
-  
+  font-size: 1.5rem;
+
   .logo {
-  color: black;
+    color: black;
+    grid-column-start: 2;
+    width: 120px;
   }
-  
-  ul li {
+
+  .main-nav {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    grid-column-start: 5;
+    margin-left: auto;
+    margin-right: 32px;
+
+    li {
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   .nav-links {
     text-decoration: none;
+    color: black;
   }
 
 }
