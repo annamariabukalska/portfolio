@@ -17,9 +17,15 @@
     bottom: 0;
     width: 100%;
     text-align: center; }
-  .footer .icons {
-    width: 5rem;
-    margin-right: .5rem; }
+  .footer .icons .emails, .footer .icons .linkedin, .footer .icons .github {
+    cursor: pointer;
+    width: 2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    transition: 0.2s all; }
+    .footer .icons .emails:hover, .footer .icons .linkedin:hover, .footer .icons .github:hover {
+      opacity: 0.6; }
 
 #navbar {
   display: grid;
@@ -104,20 +110,8 @@ body {
   justify-content: center;
   align-items: center;
   padding-left: 50px;
-  line-height: 1.2;
-  height: 100vh;
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  line-height: 1.2; }
 
 .anna {
   width: 400px;
   align-content: center; }
-
-.emails, .linkedin, .github {
-  cursor: pointer;
-  width: 2rem;
-  margin-right: .10rem;
-  margin-top: 3rem;
-  margin-bottom: 6.5rem; }
