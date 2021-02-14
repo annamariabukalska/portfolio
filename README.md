@@ -1,3 +1,5 @@
 # Portfolio
  
-Kommer her 
+Welcome to Anna's Portfolio:
+
+www.anna.no

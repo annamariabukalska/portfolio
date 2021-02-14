@@ -10,6 +10,16 @@
   justify-content: center;
   text-align: center;
   font-family: "Montserrat", serif; }
+  .footer .footer-text {
+    margin-top: 3rem;
+    margin-bottom: -10rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center; }
+  .footer .icons {
+    width: 5rem;
+    margin-right: .5rem; }
 
 #navbar {
   display: grid;
@@ -94,7 +104,16 @@ body {
   justify-content: center;
   align-items: center;
   padding-left: 50px;
-  line-height: 1.2; }
+  line-height: 1.2;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.anna {
+  width: 400px;
+  align-content: center; }
 
 .emails, .linkedin, .github {
   cursor: pointer;
@@ -102,7 +121,3 @@ body {
   margin-right: .10rem;
   margin-top: 3rem;
   margin-bottom: 6.5rem; }
-
-.anna {
-  width: 400px;
-  align-content: center; }
