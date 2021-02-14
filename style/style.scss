@@ -1,6 +1,6 @@
 @import 'typography.scss';
 @import 'colors.scss';
-@import 'ommeg.scss';
+@import 'about-me.scss';
 @import 'footer.scss';
 @import 'navbar.scss';
 @import 'project.scss';
@@ -82,21 +82,4 @@ body {
 	}
 
 
-}
-
-.text {
-	height:100vh;
-    width:50vw;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-	padding-left: 50px;
-	line-height: 1.2;
-	
-}
-
-
-.anna {
-	width: 400px;
-    align-content: center;
 }

@@ -1,0 +1,19 @@
+#about-me {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 32px;
+    justify-content: center;
+    font-size: 17pt;
+    line-height: $line-height;
+    padding-top: 128px;
+    padding-bottom: 128px;
+
+    .text {
+        margin-left: 50px;
+    }
+
+    .anna {
+        width: 400px;
+        margin-right: 50px;
+    }
+}
