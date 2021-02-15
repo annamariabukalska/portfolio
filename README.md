@@ -2,4 +2,4 @@
  
 Welcome to Anna's Portfolio:
 
-www.anna.no
+https://annamariabukalska.github.io/portfolio/ 
