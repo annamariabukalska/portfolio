@@ -2,13 +2,14 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 32px;
-  justify-content: center;
+  align-items: center;
   font-size: 1rem;
   line-height: 1.3;
   padding-top: 128px;
   padding-bottom: 128px; }
   #about-me .text {
-    margin-left: 50px; }
+    margin-left: 50px;
+    margin-right: 100px; }
   #about-me .anna {
     width: 400px;
     margin-right: 50px; }
@@ -63,7 +64,7 @@
       padding-right: 10px;
       transition: 0.2s all; }
       #navbar .main-nav li:hover {
-        background: linear-gradient(to top, #F5DEC4 40%, transparent 40%) no-repeat; }
+        background: linear-gradient(to top, #F5DEC4 60%, transparent 60%) no-repeat; }
   #navbar .nav-links {
     text-decoration: none;
     color: black; }
@@ -104,7 +105,11 @@ body {
     color: black; }
   .portfolio-preview .portfolio-preview-image {
     border-radius: 5px;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 8px; }
+  .portfolio-preview .portfolio-preview-subtitle {
+    color: gray;
+    margin-top: 8px; }
   .portfolio-preview .title-pink {
     background: linear-gradient(to top, #FAC2C2 60%, transparent 60%) no-repeat; }
   .portfolio-preview .title-green {
