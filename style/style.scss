@@ -32,11 +32,11 @@ body {
 	text-align: center;
 }
 
-.horisontal_slider {
+.horizontal_slider {
 	display: block;
 	width: 100%;
 	overflow-x: scroll;
-	margin-top: 150px;
+	margin-top: 50px;
 	padding: 20px;
 	box-sizing: border-box;
 }
@@ -80,6 +80,4 @@ body {
 	.title-orange {
 		background: linear-gradient(to top, $orange 60%, transparent 60%) no-repeat;
 	}
-
-
 }

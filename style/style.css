@@ -3,7 +3,7 @@
   grid-template-columns: auto auto;
   grid-column-gap: 32px;
   justify-content: center;
-  font-size: 17pt;
+  font-size: 1rem;
   line-height: 1.3;
   padding-top: 128px;
   padding-bottom: 128px; }
@@ -45,7 +45,7 @@
   grid-column-gap: 5px;
   justify-items: center;
   font-family: "Montserrat", serif;
-  font-size: 1.5rem; }
+  font-size: 1rem; }
   #navbar .logo {
     color: black;
     grid-column-start: 2;
@@ -60,7 +60,10 @@
     #navbar .main-nav li {
       display: inline-block;
       padding-left: 10px;
-      padding-right: 10px; }
+      padding-right: 10px;
+      transition: 0.2s all; }
+      #navbar .main-nav li:hover {
+        background: linear-gradient(to top, #F5DEC4 40%, transparent 40%) no-repeat; }
   #navbar .nav-links {
     text-decoration: none;
     color: black; }
@@ -79,11 +82,11 @@ body {
 #top-info {
   text-align: center; }
 
-.horisontal_slider {
+.horizontal_slider {
   display: block;
   width: 100%;
   overflow-x: scroll;
-  margin-top: 150px;
+  margin-top: 50px;
   padding: 20px;
   box-sizing: border-box; }
 
