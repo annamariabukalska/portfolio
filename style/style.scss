@@ -1,17 +1,10 @@
 @import 'colors.scss';
+@import 'variables.scss';
 @import 'typography.scss';
 @import 'about-me.scss';
 @import 'footer.scss';
 @import 'navbar.scss';
 @import 'project.scss';
-
-// Layout
-$padding: 1em;
-$border-radius: 2em;
-
-// Breakpoint for mobil
-$mobile: 418px;
-$desktop: 1024px;
 
 * {
 	box-sizing: border-box;

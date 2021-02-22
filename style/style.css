@@ -31,6 +31,10 @@
   #about-me .anna {
     width: 100%; }
 
+@media screen and (max-width: 418px) {
+  .about-me {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important; } }
+
 .footer {
   width: 100vw;
   height: 50vh;
@@ -105,7 +109,7 @@ body {
 
 @media screen and (max-width: 418px) {
   .projects {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); } }
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important; } }
 
 .projects {
   display: grid;
