@@ -1,5 +1,5 @@
-@import 'typography.scss';
 @import 'colors.scss';
+@import 'typography.scss';
 @import 'about-me.scss';
 @import 'footer.scss';
 @import 'navbar.scss';
@@ -16,12 +16,14 @@ $desktop: 1024px;
 * {
 	box-sizing: border-box;
 	margin: 0;
-    padding: 0;
+	padding: 0;
 }
 
 body {
 	font-family: $font;
 	background: $background;
+	height: 100vh;
+
 	a {
 		text-decoration: none;
 	}
@@ -30,60 +32,44 @@ body {
 
 #top-info {
 	text-align: center;
+	font-size: 1.5rem;
 }
 
-.horizontal_slider {
-	display: block;
-	width: 100%;
-	overflow-x: scroll;
+
+.projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 1rem;
 	margin-top: 50px;
-	padding: 20px;
-	box-sizing: border-box;
-}
-.slider_container {
-	display: block;
-	white-space: nowrap;
-}
+	padding: 0 32px;
 
-.portfolio-preview {
-	display: inline-grid;
-	margin-right: 10px;
-	max-height: 600px;
-	width: 400px;
+	.portfolio-preview {
+		background: #ffffff;
+		overflow: hidden;
+		box-shadow: 0px 1px 5px #00000014;
+		border-radius: .5rem;
+		&:hover {
+			background: $green;
+		}
 
-	.portfolio-preview-title {
-		font-size: 20pt;
-		color: black;
-	}
-
-	.portfolio-preview-image {
-		border-radius: 5px;
-		width: 100%;
-		margin-bottom: 8px;
-	}
-
-	.portfolio-preview-subtitle {
-		color: gray;
-		margin-top: 8px;
-	}
-
-	.title-pink {
-		background: linear-gradient(to top, $pink 60%, transparent 60%) no-repeat;
-	}
-
-	.title-green {
-		background: linear-gradient(to top, $green 60%, transparent 60%) no-repeat;
-	}
-
-	.title-red {
-		background: linear-gradient(to top, $red 60%, transparent 60%) no-repeat;
-	}
-
-	.title-blue {
-		background: linear-gradient(to top, $blue 60%, transparent 60%) no-repeat;
-	}
-
-	.title-orange {
-		background: linear-gradient(to top, $orange 60%, transparent 60%) no-repeat;
+		.portfolio-preview-title {
+			font-size: 20pt;
+			color: black;
+			padding: .5rem 1rem;
+			margin: .5rem;
+		}
+	
+		.portfolio-preview-image {
+			width: 100%;
+			margin-bottom: 8px;
+		}
+	
+		.portfolio-preview-subtitle {
+			color: gray;
+			margin-top: 8px;
+			font-size: 1rem;
+			line-height: 1.5;
+			padding: 1rem .75rem;
+		}
 	}
 }

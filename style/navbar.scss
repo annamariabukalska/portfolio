@@ -10,8 +10,11 @@
 
   .logo {
     color: black;
-    grid-column-start: 2;
     width: 120px;
+  }
+
+  .logo-link {
+    grid-column-start: 2;
   }
 
   .main-nav {

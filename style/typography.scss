@@ -4,4 +4,26 @@ $line-height: 1.3;
 $font-weight: 200;
 $font-size: 2rem;
 
+.title-pink {
+	background: linear-gradient(to top, $pink 60%, transparent 60%) no-repeat;
+}
 
+.title-pink2 {
+	background: linear-gradient(to top, $pink2 60%, transparent 60%) no-repeat;
+}
+
+.title-green {
+	background: linear-gradient(to top, $green 60%, transparent 60%) no-repeat;
+}
+
+.title-red {
+	background: linear-gradient(to top, $red 60%, transparent 60%) no-repeat;
+}
+
+.title-blue {
+	background: linear-gradient(to top, $blue 60%, transparent 60%) no-repeat;
+}
+
+.title-orange {
+	background: linear-gradient(to top, $orange 60%, transparent 60%) no-repeat;
+}
