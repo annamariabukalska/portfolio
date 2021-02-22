@@ -24,7 +24,8 @@
   align-items: center;
   font-size: 1rem;
   line-height: 1.3;
-  margin-top: 128px; }
+  margin-top: 128px;
+  overflow-x: hidden; }
   #about-me .text {
     margin-left: 50px;
     margin-right: 50px; }
