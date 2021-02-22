@@ -17,3 +17,9 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: $mobile) {
+	.about-me {
+		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
+	}
+}

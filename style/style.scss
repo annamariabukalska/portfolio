@@ -35,6 +35,11 @@ body {
 	font-size: 1.5rem;
 }
 
+@media screen and (max-width: $mobile) {
+	.projects {
+		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
+	}
+}
 
 .projects {
 	display: grid;
