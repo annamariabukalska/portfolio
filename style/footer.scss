@@ -1,4 +1,4 @@
-.footer {
+footer {
     width: 100vw;
     height: 50vh;
     background: $orange_light;
@@ -8,9 +8,7 @@
     text-align: center;
     font-family: $font;
 
-    .footer-text {
-        margin-top: 3rem;
-        margin-bottom: -10rem;
+    .footer-copyright {
         left: 0;
         bottom: 0;
         width: 100%;
@@ -18,6 +16,7 @@
     }
 
     .icons {
+        margin-bottom: 1rem;
         .emails, .linkedin, .github {
             cursor: pointer;
             width: 2rem;

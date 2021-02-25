@@ -29,6 +29,7 @@
 
     .question {
         margin-top: 1rem;
+        margin-bottom: 0.5rem;
         background: linear-gradient(to top, $green 60%, transparent 60%) no-repeat;
     }
 
@@ -55,23 +56,5 @@
         width: 100%;
     }
 
-    .btn {
-        border: none;
-        border-radius: 90px;
-        outline: none;
-        padding: 10px 30px;
-        font-size: 20px;
-        color: green;
-        cursor: pointer;
-        margin: 10px auto;
-
-    }
-
-    .btn:hover {
-        background: grey;
-    }
-
-    /*Slutt på forrige og neste bilde*/
-
-
+    
 }
