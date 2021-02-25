@@ -147,14 +147,15 @@ body {
   padding: 2rem; }
 
 .slider {
-  margin: 50px auto;
-  width: 50%; }
+  margin: 70px auto;
+  width: 70%; }
 
 .img-box img {
   width: 100%; }
 
 .btn {
   border: none;
+  border-radius: 90px;
   outline: none;
   padding: 10px 30px;
   font-size: 20px;
@@ -163,26 +164,8 @@ body {
   margin: 10px auto; }
 
 .btn:hover {
-  background: hotpink; }
+  background: grey; }
 
-/*
-.prev .next{
-position: relative;
-cursor: pointer;
-display: flex;
-align-items: center;
-justify-content: center;
-min-width: 4rem;
-min-height: 4rem;
-text-align: center;
-color: #0E004E;
-background-color: #FFF6E8;
-font-weight: bold;
-font-size: 1.8rem;
-transition: 0.6s ease;
-border-radius: 100rem;
-user-select: none;
-}*/
 * {
   box-sizing: border-box;
   margin: 0;

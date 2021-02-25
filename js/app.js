@@ -1,3 +1,7 @@
+var slider_img = document.querySelector('.slider-img');
+var images = ['lokalbefolkning.png', 'apenhet.png', 'kunstplus.png'];
+var i = 0;
+
 new Typewriter('#top-info', {
   loop: true,
   strings: ['Interaksjonsdesigner', 'UX-designer'],
@@ -16,13 +20,8 @@ function emailAnna() {
 	window.open("mailto:annamariabukalska@gmail.com", '_self');
 }
 
-
-const slider_img = document.querySelector('.slider-img');
-const images = ['lokalbefolkning.png', 'apenhet.png', 'kunstplus.png'];
-let i = 0;
-
 function prev() {
-  if(i<= 0) i = images.length;
+  if (i<= 0) i = images.length;
   i--;
   return setImg();
 }
