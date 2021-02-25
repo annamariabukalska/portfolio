@@ -93,82 +93,59 @@
     text-decoration: none;
     color: black; }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: "Montserrat", serif;
-  background: #f5f4f6;
-  height: 100vh;
-  margin: auto; }
-  body a {
-    text-decoration: none; }
-
-.project {
+.project-page {
   max-width: 160rem;
   display: flex;
   align-items: end;
   flex-flow: column;
   margin-left: 100px;
   margin-right: 100px;
-  padding-bottom: 6rem; }
+  padding-bottom: 6rem;
+  /*Forrige og neste bilde*/
+  /*Slutt på forrige og neste bilde*/ }
+  .project-page .project-titel {
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: .5rem;
+    line-height: 1.3; }
+  .project-page .project-tema {
+    padding: 1rem;
+    font-size: 1rem;
+    margin-left: 1rem; }
+  .project-page .project-category {
+    color: #838383;
+    margin-left: 2rem;
+    padding-bottom: 3rem; }
+  .project-page .question {
+    margin-top: 1rem;
+    background: linear-gradient(to top, #CDF8E0 60%, transparent 60%) no-repeat; }
+  .project-page .description {
+    line-height: 1.3; }
+  .project-page .picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 2rem; }
+  .project-page .slider {
+    margin: 70px auto;
+    width: 70%; }
+  .project-page .img-box img {
+    width: 100%; }
+  .project-page .btn {
+    border: none;
+    border-radius: 90px;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+    margin: 10px auto; }
+  .project-page .btn:hover {
+    background: grey; }
 
-.project-titel {
-  padding: 1rem;
-  font-size: 3rem;
-  font-weight: bolder;
-  letter-spacing: .5rem;
-  line-height: 1.3; }
-
-.project-tema {
-  padding: 1rem;
-  font-size: 1rem;
-  margin-left: 1rem; }
-
-.project-kategori {
-  color: #838383;
-  margin-left: 2rem;
-  padding-bottom: 3rem; }
-
-.question {
-  margin-top: 1rem;
-  background: linear-gradient(to top, #CDF8E0 60%, transparent 60%) no-repeat; }
-
-.description {
-  line-height: 1.3; }
-
-.picture {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100vh;
-  padding: 2rem; }
-
-/*Forrige og neste bilde*/
-.slider {
-  margin: 70px auto;
-  width: 70%; }
-
-.img-box img {
-  width: 100%; }
-
-.btn {
-  border: none;
-  border-radius: 90px;
-  outline: none;
-  padding: 10px 30px;
-  font-size: 20px;
-  color: green;
-  cursor: pointer;
-  margin: 10px auto; }
-
-.btn:hover {
-  background: grey; }
-
-/*Slutt på forrige og neste bilde*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -176,8 +153,7 @@ body {
 
 body {
   font-family: "Montserrat", serif;
-  background: #f5f4f6;
-  height: 100vh; }
+  background: #f5f4f6; }
   body a {
     text-decoration: none; }
 
