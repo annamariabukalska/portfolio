@@ -8,7 +8,7 @@ new Typewriter('#top-info', {
   autoStart: true,
 });
 
-function openlinkedin() {
+function openLinkedin() {
 	window.open("https://www.linkedin.com/in/annamariabukalska/")
 }
 

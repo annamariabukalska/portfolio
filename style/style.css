@@ -192,7 +192,8 @@ body {
 .old-portfolio {
   margin-right: 50px;
   margin-left: 50px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  text-align: center; }
 
 .projects {
   display: grid;
@@ -210,14 +211,12 @@ body {
     .projects .portfolio-preview .portfolio-preview-title {
       font-size: 20pt;
       color: black;
-      padding: .5rem 1rem;
-      margin: .5rem; }
+      margin: .5rem 1rem; }
     .projects .portfolio-preview .portfolio-preview-image {
       width: 100%;
       margin-bottom: 8px; }
     .projects .portfolio-preview .portfolio-preview-subtitle {
-      color: gray;
-      margin-top: 8px;
+      color: #757575;
       font-size: 1rem;
       line-height: 1.5;
       padding: 1rem .75rem; }
