@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .title-pink {
   background: linear-gradient(to top, #FAC2C2 60%, transparent 60%) no-repeat; }
 
@@ -146,6 +147,7 @@ body {
   height: 100vh;
   padding: 2rem; }
 
+/*Forrige og neste bilde*/
 .slider {
   margin: 70px auto;
   width: 70%; }
@@ -166,6 +168,7 @@ body {
 .btn:hover {
   background: grey; }
 
+/*Slutt på forrige og neste bilde*/
 * {
   box-sizing: border-box;
   margin: 0;
