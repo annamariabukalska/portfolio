@@ -21,9 +21,11 @@ body {
     align-items: end;
     flex-flow: column;
     margin-left: 100px;
-    margin-right: 100px;}
+    margin-right: 100px;
+    padding-bottom: 6rem;
+}
 
-.prosject-titel {
+.project-titel {
     padding: 1rem;
     font-size: 3rem;
     font-weight: bolder;
@@ -31,13 +33,13 @@ body {
     line-height: 1.3;
 }
 
-.prosject-tema {
+.project-tema {
     padding: 1rem;
     font-size: 1rem;
     margin-left: 1rem;
 }
 
-.prosject-kategori {
+.project-kategori {
     color: rgb(131, 131, 131);
     margin-left: 2rem;
     padding-bottom: 3rem;
@@ -45,8 +47,34 @@ body {
 
 .question {
     margin-top: 1rem;
+    background: linear-gradient(to top, $green 60%, transparent 60%) no-repeat;
 }
-
 .description {
     line-height: 1.3;
+}
+.picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.prev .next{
+position: relative;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+min-width: 4rem;
+min-height: 4rem;
+text-align: center;
+color: #0E004E;
+background-color: #FFF6E8;
+font-weight: bold;
+font-size: 1.8rem;
+transition: 0.6s ease;
+border-radius: 100rem;
+user-select: none;
 }
