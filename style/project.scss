@@ -61,6 +61,31 @@ body {
     padding: 2rem;
 }
 
+
+.slider {
+    margin: 50px auto;
+    width: 50%;
+}
+.img-box img {
+    width: 100%;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+    margin: 10px auto;
+
+}
+
+.btn:hover {
+    background: hotpink;
+}
+
+/*
 .prev .next{
 position: relative;
 cursor: pointer;
@@ -77,4 +102,4 @@ font-size: 1.8rem;
 transition: 0.6s ease;
 border-radius: 100rem;
 user-select: none;
-}
+}*/

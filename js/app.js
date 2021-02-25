@@ -17,37 +17,22 @@ function emailAnna() {
 }
 
 
+const slider_img = document.querySelector('.slider-img');
+const images = ['lokalbefolkning.png', 'apenhet.png', 'kunstplus.png'];
+let i = 0;
 
-// attach event handlers with jquery
-$("#next").on("click", function (e) {
-  // check with following statement to see if event handler is attached properly
-  // alert("next");
-  next();
-});
-
-$("#prev").on("click", function (e) {
-  prev();
-});
-
-var images = new Array(
-  "http://placekitten.com/500/200",
-  "http://placekitten.com/499/200",
-  "http://placekitten.com/501/200",
-  "http://placekitten.com/500/199");
-
-function getCurrentImageIndex() {
-  return images.indexOf(document.getElementById("image").src);
+function prev() {
+  if(i<= 0) i = images.length;
+  i--;
+  return setImg();
 }
 
 function next() {
-  nextImage = (getCurrentImageIndex() + 1) % images.length;
-  document.getElementById("image").src = images[nextImage];
-  $("#textarea").val(images[nextImage]);
+   if (i >= images.length -1) i = -1;
+   i++;
+   return setImg();
 }
 
-function prev() {
-  nextImage = (getCurrentImageIndex() - 1 + images.length) % images.length;
-  document.getElementById("image").src = images[nextImage];
-  $("#textarea").val(images[nextImage]);
+function setImg() {
+  return slider_img.setAttribute('src', 'resources/' + images[i]);
 }
-

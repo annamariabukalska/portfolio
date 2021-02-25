@@ -8,6 +8,8 @@
     <meta name="description" content="Annas design">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" href="resources/favicon.png" />
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 
 <body>
@@ -46,13 +48,19 @@
     <h1 class="question">hvorfor?</h1>    
     <p class="description">Vi har samarbeidet med bedriften Åpenhet. Åpenhet er et norsk firma som utvikler rapportering- og presentasjonsteknologi til den offentlige sektoren (Staten). Åpenhet utvikler en rekke verktøy som skal gjøre det enklere å utarbeide interaktive tilstandsrapporter som inneholder gode verktøy for å sammenligne og granske data. Bedriftet beskriver seg selv slik «Åpenhet is a Norwegian GovTech company based in Oslo and Paris. We specialize in good governance & data driven policy making. We have piloted projects with EU presidencies and are now working closely with the OECD and EC Enlargement to scale fact based solutions for good public governance policy making.»</p> 
 
-    <button id="next" onclick="next()">next</button>
-    <button id="prev" onclick="prev()">prev</button>
-    <img src="http://placekitten.com/500/199" id="image" />
-    <textarea id="textarea" rows="1" cols="40">
-    </textarea>
+    <!-- Image Slider-->
+    <div class="slider">
+        <div class="img-box">
+            <img src="resources/apenhet.png" alt="" class="slider-img" />
+        </div>
+    </div>
 
-    
+    <!-- Next and Prev Buttons-->
+    <button class="btn" onclick="prev()">Prev</button>
+    <button class="btn" onclick="next()">Next</button>
+
+
+
     <h1 class="question">problemstillingen</h1>
     <p class="description">“Hvordan kan vi skape datavisualiseringer basert på kvantitative data på en oversiktlig, kontekstuell og relevant måte, som igjen skal danne grunnlaget i utviklingen av interne verktøy fremover?”</p> 
 
@@ -61,6 +69,8 @@
 
 </main>
 </section>
+
+<script src="js/app.js"></script>
 </body>
 
 </html>
