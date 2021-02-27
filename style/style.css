@@ -102,20 +102,36 @@ footer {
   margin-right: 100px;
   padding-bottom: 6rem;
   /*Forrige og neste bilde*/ }
-  .project-page .project-titel {
-    padding: 1rem;
+  .project-page .project-title {
     font-size: 3rem;
     font-weight: bolder;
     letter-spacing: .5rem;
     line-height: 1.3; }
-  .project-page .project-tema {
+  .project-page .project-metadata-container {
     padding: 1rem;
     font-size: 1rem;
-    margin-left: 1rem; }
-  .project-page .project-category {
-    color: #838383;
-    margin-left: 2rem;
-    padding-bottom: 3rem; }
+    margin-left: 1rem;
+    margin-bottom: 3rem; }
+    .project-page .project-metadata-container .project-category {
+      color: #838383; }
+  .project-page .lenker {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .project-page .project-button {
+    background-color: #808080;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 100;
+    font-size: 1rem;
+    padding: .8rem 1rem;
+    cursor: pointer;
+    transition: transform .4s ease-in-out;
+    text-align: center; }
+    .project-page .project-button:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: 3px 6px 35px rgba(68, 69, 73, 0.358); }
   .project-page .question {
     margin-top: 1rem;
     margin-bottom: 0.5rem;

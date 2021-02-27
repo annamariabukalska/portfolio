@@ -1,4 +1,6 @@
 .project-page {
+
+    // TODO: rydd opp
     max-width: 160rem;
     display: flex;
     align-items: end;
@@ -7,24 +9,27 @@
     margin-right: 100px;
     padding-bottom: 6rem;
 
-    .project-titel {
-        padding: 1rem;
+    .project-title {
         font-size: 3rem;
         font-weight: bolder;
         letter-spacing: .5rem;
         line-height: 1.3;
     }
 
-    .project-tema {
+    .project-metadata-container {
         padding: 1rem;
         font-size: 1rem;
         margin-left: 1rem;
+        margin-bottom: 3rem;
+        .project-category {
+            color: rgb(131, 131, 131);
+        }
     }
 
-    .project-category {
-        color: rgb(131, 131, 131);
-        margin-left: 2rem;
-        padding-bottom: 3rem;
+    .lenker {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     .question {
@@ -37,24 +42,30 @@
         line-height: 1.3;
     }
 
-    .picture {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 100vh;
-        padding: 2rem;
+    .project-button {
+        background-color: #808080;
+        color: #fff;
+        border: none;
+        border-radius: 1rem;
+        font-weight: 100;
+        font-size: 1rem;
+        padding: .8rem 1rem;
+        cursor: pointer;
+        transition: transform .4s ease-in-out;
+        text-align: center;
+        &:hover {
+            transform: translateY(-.5rem);
+            box-shadow: 3px 6px 35px rgba(68, 69, 73, 0.358);
+        }
     }
 
-    /*Forrige og neste bilde*/
+    /* Slider med prosjektbilder */
     .slider {
         margin: 70px auto;
         width: 70%;
-    }
 
-    .img-box img {
-        width: 100%;
+        .img-box img {
+            width: 100%;
+        }
     }
-
-    
 }
