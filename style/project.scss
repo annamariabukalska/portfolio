@@ -28,8 +28,15 @@
 
     .lenker {
         display: grid;
-        grid-gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 0.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        width: 100%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        .lenker {
+            width: 50%;
+        }
     }
 
     .question {
@@ -42,27 +49,14 @@
         line-height: 1.3;
     }
 
-    .project-button {
-        background-color: #808080;
-        color: #fff;
-        border: none;
-        border-radius: 1rem;
-        font-weight: 100;
-        font-size: 1rem;
-        padding: .8rem 1rem;
-        cursor: pointer;
-        transition: transform .4s ease-in-out;
-        text-align: center;
-        &:hover {
-            transform: translateY(-.5rem);
-            box-shadow: 3px 6px 35px rgba(68, 69, 73, 0.358);
-        }
+    .navigation-buttons {
+        margin: 0 auto;
     }
 
     /* Slider med prosjektbilder */
     .slider {
-        margin: 70px auto;
-        width: 70%;
+        margin: 60px auto;
+        width: 80%;
 
         .img-box img {
             width: 100%;
