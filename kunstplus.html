@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosjekt: Kunst Plus - Anna Maria Bukalska</title>
+    <meta name="description" content="Annas design">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="resources/favicon.png" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
+
+<body>
+    <main>
+        <nav id="navbar">
+            <a href="index.html" class="logo-link"><img src="resources/logo.png" class="logo" alt="Logo" /></a>
+
+            <ul class="main-nav" id="js-menu">
+                <li id="kontakt">
+                    <a href="./#about-me" class="nav-links">Om meg</a>
+                </li>
+                <li>
+                    <a href="resources/CV.pdf" target="_blank" class="nav-links">CV</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class=project-page>
+            <div>
+                <h1 class="project-title">Kunst Plus</h1>
+            </div>
+            <div class="project-metadata-container">
+                <h2 class="project-tema">Informasjonsarkitektur, fra publikasjon til nettside
+                    <br>Prosess og Prosjektledelse</h2>
+                <h3 class="project-category">Webdesign</h3>
+            </div>
+            <div class="lenker">
+                <a class="project-button" target="_blank" href="https://github.com/annamariabukalska/tema-9">GitHub-kode ↗</a>
+                <a class="project-button" target="_blank" href="resources/Prosessdokumentasjon - Kunst Plus.pdf">Dokumentasjon ↗</a>
+            </div>
+
+            <h1 class="question">om</h1>
+            <p class="description">Informasjonsarkitektur er handlingen av å samle, organisere, strukturere informasjon. Målet var å lage en nettside av en publikasjon med innhold og design som utgangspunkt, og har valgt å gå for publikasjonen “Ingen vei tilbake” av Kunst Pluss 1.
+            </p>
+
+            <h1 class="question">hvem?</h1>
+            <p class="description">Målgruppen er medlemsforeningene i Norske Kunstforeninger, samt ansatte ved gallerier, museer og
+                andre kulturinstitusjoner som er primærmålgruppen. samt kunstpolitikere og administratorer, samt media og andre kunstinteresserte. Tidsskriftet er minimalistisk og laget i svarthvitt, med både tekst og bilder. Ved å bla gjennom tidsskrift får man en følelse av tidløshet og skildringer av øde og golde landskap. Noe av
+                teksten og bildene er plassert tilsynelatende “tilfeldig” noen steder.</p>
+
+            <h1 class="question">hvorfor?</h1>
+            <p class="description">Denne publisering skiller seg fra andre publiseringer, fordi de er preget av kunst, galleri og maleri. Kunst Pluss har sin egen identitet. Den er enkelt, rett og ingen unødvendig informasjon, og med kun tekst som er relatert til kunstneren.</p>
+
+            <!-- Image Slider-->
+            <div class="slider">
+                <div class="img-box">
+                    <img src="resources/apenhet.png" alt="" class="slider-img" />
+                </div>
+            </div>
+
+            <!-- Next and Prev Buttons-->
+            <div class="navigation-buttons">
+                <button class="button" onclick="prev()">←</button>
+                <button class="button" onclick="next()">→</button>
+            </div>
+
+
+            <h1 class="question">problemstillingen</h1>
+            <p class="description">“Hvordan kan vi skape datavisualiseringer basert på kvantitative data på en oversiktlig, kontekstuell og  relevant måte, som igjen skal danne grunnlaget i utviklingen av interne verktøy fremover?”</p>
+
+            <h1 class="question">hvordan?</h1>
+            <p class="description">Teksten kommer snart! </p>
+
+        </div>
+
+        <footer>
+            <h2>.Bukalska</h2>
+            <section class="icons">
+                <img src="resources/icon-email.png" class="emails" alt="Send Mail" onclick="emailAnna()">
+                <img src="resources/icon-github.png" class="github" alt="GitHub" onclick="openGitHub()">
+                <img src="resources/icon-linkedin.png" class="linkedin" alt="LinkedIn" onclick="openLinkedin()">
+            </section>
+            <p class="footer-copyright">© 2021 Designet og kodet av Anna Maria Bukalska</p>
+        </footer>
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
