@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosjekt: Snylt-o-meter - Anna Maria Bukalska</title>
+    <meta name="description" content="Annas design">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="resources/favicon.png" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
+
+<body>
+    <main>
+        <nav id="navbar">
+            <a href="index.html" class="logo-link"><img src="resources/logo.png" class="logo" alt="Logo" /></a>
+
+            <ul class="main-nav" id="js-menu">
+                <li id="kontakt">
+                    <a href="./#about-me" class="nav-links">Om meg</a>
+                </li>
+                <li>
+                    <a href="resources/CV.pdf" target="_blank" class="nav-links">CV</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class=project-page>
+            <div>
+                <h1 class="project-title">#ikketaaltforgodfisk</h1>
+            </div>
+            <div class="project-metadata-container">
+                <h2 class="project-tema">Digital historiefortelling
+                    <br>Gamification</h2>
+                <h3 class="project-category">Gamification</h3>
+            </div>
+            <div class="lenker">
+                <a class="project-button" target="_blank" href="https://www.figma.com/file/1plCmnc5gkB0sFhw2qRLYR/Ferdige-filer-Snylt-o-meter?node-id=0%3A1">Figma ↗</a>
+                <a class="project-button" target="_blank" href="resources/Spilleregler.pdf">Spilleregler ↗</a>
+                <a class="project-button" target="_blank" href="resources/App-manual.pdf">App-manual ↗</a>
+                <a class="project-button" target="_blank" href="resources/App.pdf">App ↗</a>
+            </div>
+
+            <h1 class="question">om</h1>
+            <p class="description">I dette temaet fikk vi i oppgave om å lage brettspill. Det skulle være et ‘Serious game’, et spill som motiverer spillerne, videregående elever (ca 16 - 19 år), til å lære om et tema via brettspill og lek. Vi måtte lage et spill som er moro å spille, hadde tydelige og forståelige spilleregler, spillbart for 3 til 5 spillere, og evt en tilhørende companion-app/nettside eller arduino.  
+            </p>
+
+            <h1 class="question">hvem?</h1>
+            <p class="description">Kampanje som bevisstgjør og motarbeider polarisering av samfunnet, og sosiale mediers rolle i dette. Målgruppen vi har valgt er personer mellom 20 og 60 år, og som er aktive brukere av sosiale medier. Vårt mål var også å nå ut til både personer på den liberale og den konservative siden av det politiske spekteret.</p>
+
+            <h1 class="question">hvorfor?</h1>
+            <p class="description">Skatteflukt betyr å flytte penger til et annet land for å unngå å betale skatt. Kostnader og gjeld blir ofte registreres i land med høy skatt, mens man registrerer inntekter i land med lav skatt. Et ‘typisk’ skatteparadis er land der skattesatsene er lave eller ikke-eksisterende for utenlandske bedrifter, ofte med en stor grad av diskresjon, anonymitet og lite byråkrati. Eksempler på land som har blitt brukt som skatteparadis er Bahamas, Caymanøyene, Bermuda og Panama.</p>
+
+            <!-- Image Slider-->
+            <div class="slider">
+                <div class="img-box">
+                    <img src="resources/snyltometer-iphone.png" alt="prototype" class="slider-img" />
+                </div>
+            </div>
+
+            <!-- Next and Prev Buttons-->
+            <div class="navigation-buttons">
+                <button class="button" onclick="prev()">←</button>
+                <button class="button" onclick="next()">→</button>
+            </div>
+
+
+            <h1 class="question">problemstillingen</h1>
+            <p class="description">“Hvordan få videregåendeelever interessert og bevisst på temaet skatteflukt på en underholdende måte?”</p>
+
+            <h1 class="question">hvordan?</h1>
+            <p class="description">Vi har valgt å jobbe med en smidig utviklingsmetodikk, Kanban. Grunnen til at vi valgte den metoden er arbeidsflyt, der man jobber med en oppgave til den er ferdig. Vi tatt også i betraktning backlog der en vi hadde en liste med arbeidsoppgaver som skal utføres i prosjektet. Vi hadde også faglig stand ups der vi gått gjennom eventuelle backlog og vi fokuserte oss på de.  Spillerne er millionærer som skal selv prøve å snylte, slik at de faller ikke konkurs og heller ikke at samfunnet går ikke konkurs. Spillet er et vanlig brettspill med terning og ulike kort, samt sett på ideen med å sette opp og videreutvikle en mulig Companion-app. Med en app ville utfordringene med et skjult pengesystem blitt mye enklere å få til på en god og effektiv måte.</p>
+            
+
+        </div>
+
+        <footer>
+            <h2>.Bukalska</h2>
+            <section class="icons">
+                <img src="resources/icon-email.png" class="emails" alt="Send Mail" onclick="emailAnna()">
+                <img src="resources/icon-github.png" class="github" alt="GitHub" onclick="openGitHub()">
+                <img src="resources/icon-linkedin.png" class="linkedin" alt="LinkedIn" onclick="openLinkedin()">
+            </section>
+            <p class="footer-copyright">© 2021 Designet og kodet av Anna Maria Bukalska</p>
+        </footer>
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
