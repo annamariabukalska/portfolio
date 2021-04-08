@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosjekt: Aftenposten - Anna Maria Bukalska</title>
+    <meta name="description" content="Annas design">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="resources/favicon.png" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
+
+<body>
+    <main>
+        <nav id="navbar">
+            <a href="index.html" class="logo-link"><img src="resources/logo.png" class="logo" alt="Logo" /></a>
+
+            <ul class="main-nav" id="js-menu">
+                <li id="kontakt">
+                    <a href="./#about-me" class="nav-links">Om meg</a>
+                </li>
+                <li>
+                    <a href="resources/CV.pdf" target="_blank" class="nav-links">CV</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class=project-page>
+            <div>
+                <h1 class="project-title">Aftenposten</h1>
+            </div>
+            <div class="project-metadata-container">
+                <h2 class="project-tema">Interaktiv løsning
+                    <br>Digital prototyping og brukertester</h2>
+                <h3 class="project-category">Webdesign</h3>
+            </div>
+            <div class="lenker">
+                <a class="project-button" target="_blank" href="https://www.youtube.com/watch?v=CcS6dWh5G1s&t=6s">Video av prototype ↗</a>
+                <a class="project-button" target="_blank" href="https://www.figma.com/proto/ZgKgjCEFso6rIOW83WW1nv/Aftenposten-min-egen?node-id=11%3A3022&viewport=-1244%2C-1123%2C0.14168012142181396&scaling=min-zoom&page-id=0%3A1">Figma ↗</a>
+            </div>
+
+            <h1 class="question">om</h1>
+            <p class="description">Vi ønsker også å ta inspirasjon fra allerede vellykkede ideer og apper/hjemmesider som blir mye  anvendt blant målgruppen. Ut i fra dette kom vi frem til følgende konsept:
+
+                “Rett på sak”
+                
+                Med dette innebærer det en kort og gratis oppsummering for å fange og interessere brukeren til å ville lese mer. Det vil være mye bruk av store bilder og en tekst som altså går rett på sak. Det vil være bruk av kategorier for å treffe brukeren sine interesser, i tillegg til muligheten for å kunne lagre artikler enkelt i appen. Vi ønsker også å gå gjennom mulighetene for en enklere betalingsløsning når det kommer til abonnementet, gjennom blant annet Vipps som er mye brukt av vår målgruppe.                 
+            </p>
+
+            <h1 class="question">hvem?</h1>
+            <p class="description">Målgruppen er personer født etter 1990 og er i aldersgruppen 18-25 år. Denne gruppen kalles Generasjon Z , dette er en generasjon preget av rask teknologisk utvikling. De er oppvokst med teknologi og internett og er godt kjent med sosiale medier, og er i tillegg mer endringsorienterte enn tidligere generasjoner. Skal du fange deres interesse, må du gjøre det på åtte sekunder (Dagbladet). Samtidig er de engasjerte og liker å dele linker og kunnskap med andre unge. De er også en kjøpesterk generasjon, men lar seg ikke lure av tradisjonell markedsføring (Ledernytt).
+            </p>
+
+            <h1 class="question">hvorfor?</h1>
+            <p class="description">Aftenposten har et ønske om å få en større andel unge blant sine faste lesere. Vi ønsker å finne ut hvordan målgruppen opplever Aftenposten sin nettside og app, og hvor lett det er å navigere seg gjennom dem. Kanskje er det en forskjell på personer med ulik utdannelse eller ulike  vaner. Vi har utført både kvantitative og kvalitative metoder for å få innsikt og data.</p>
+
+            <!-- Image Slider-->
+            <div class="slider">
+                <div class="img-box">
+                    <img src="resources/aftenposten/aftenposten-iphone.jpg" alt="prototype" class="slider-img" />
+                </div>
+            </div>
+
+            <!-- Next and Prev Buttons-->
+            <div class="navigation-buttons">
+                <button class="button" onclick="prev()">←</button>
+                <button class="button" onclick="next()">→</button>
+            </div>
+
+
+            <h1 class="question">problemstillingen</h1>
+            <p class="description">
+                “Hvordan kan Aftenposten presentere nyheter og relevant innhold til unge mellom 18-25 for å øke bruk og engasjement blant målgruppen?“
+                </p>
+
+            <h1 class="question">hvordan?</h1>
+            <p class="description">
+                Vi foretok flere lo-fi brukertester, hvor vi ønsket å finne ut om brukerne forstår appens hovedfunksjoner og oppsett, og hvilke utfordringer de eventuelt møter på. Alle som var med å teste skjønte og kunne gjenkjenne konseptet med å lagre artikler og funksjonen med horisontal scroll. De fleste foretrakk også “dark-mode”. Brukerne som testet skjønte konseptet med meny “tab-baren”, men ett av ikonene skapte dermed litt forvirring, da det lett kunne forveksles med et annet ikon i samme meny. Det ble også foreslått at størrelsen på artiklene på hovedsidene kunne vært litt større og at den horisontale scrolle-baren forsvinner ut av skjermen på høyre side, slik at det er underforstått at man kan sveipe mot venstre for å se alle artiklene i rekken. Metodene vi brukte her var A/B testing for å teste ut flere versjoner av appen, i tillegg til metodene “user experience” og “experience prototyping”. De to sistnevnte metodene tar sikte på å forbedre opplevelsen for brukeren ved testing av produktet og å teste ut et konsept med den faktiske målgruppen. 
+
+
+                </p>
+
+            
+
+        </div>
+
+        <footer>
+            <h2>.Bukalska</h2>
+            <section class="icons">
+                <img src="resources/icon-email.png" class="emails" alt="Send Mail" onclick="emailAnna()">
+                <img src="resources/icon-github.png" class="github" alt="GitHub" onclick="openGitHub()">
+                <img src="resources/icon-linkedin.png" class="linkedin" alt="LinkedIn" onclick="openLinkedin()">
+            </section>
+            <p class="footer-copyright">© 2021 Designet og kodet av Anna Maria Bukalska</p>
+        </footer>
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
