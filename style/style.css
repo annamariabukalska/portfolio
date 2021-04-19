@@ -184,12 +184,6 @@ body {
   .projects {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important; } }
 
-.old-portfolio {
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-top: 50px;
-  text-align: center; }
-
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
