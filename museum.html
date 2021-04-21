@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosjekt: Teknisk Museum - Anna Maria Bukalska</title>
+    <meta name="description" content="Annas design">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="resources/favicon.png" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GJT9KR61J"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-6GJT9KR61J');
+	</script>
+</head>
+
+<body>
+    <main>
+        <nav id="navbar">
+            <a href="index.html" class="logo-link"><img src="resources/logo.png" class="logo" alt="Logo" /></a>
+
+            <ul class="main-nav" id="js-menu">
+                <li id="kontakt">
+                    <a href="./#about-me" class="nav-links">Om meg</a>
+                </li>
+                <li>
+                    <a href="resources/CV.pdf" target="_blank" class="nav-links">CV</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class=project-page>
+            <div>
+                <h1 class="project-title">Teknisk Museum</h1>
+            </div>
+            <div class="project-metadata-container">
+                <h2 class="project-tema">Metodologier <br>Spekulativt design</h2>
+                <h3 class="project-category"></h3>
+            </div>
+            <div class="lenker">
+                <a class="project-button" target="_blank" href="resources/museum-rapport.pdf">Rapport ↗</a>
+                <a class="project-button" target="_blank" href="resources/museum-pitch-vitensenteret.pdf">Presentasjon ↗</a>
+                <a class="project-button" target="_blank" href="resources/museum-designbrief.pdf">Designbrief ↗</a>
+                <a class="project-button" target="_blank" href="https://vimeo.com/192860352">Video ↗</a>
+            </div>
+
+            <h1 class="question">om</h1>
+            <p class="description">Dette prosjektet handler om datavisualisering. Datavisualiseringer kalles også for
+                informasjonsvisualisering og handler om å presentere informasjon på en oversiktlig, kontekstuell og
+                relevant måte. Målet med oppgaven er å skape en rekke datavisualiseringer, som er basert på kvantitativ
+                data.</p>
+
+            <h1 class="question">hvem?</h1>
+            <p class="description">Vi samarbeidet med Oslo Vitensenter i Teknisk Musem for å formidle kunnskap om drivhuseffekten, atmosfæren, og vekke interesse for læring blant publikum. Teknisk museum ligger på Kjelsås i Oslo og ble stiftet i 1914. I 2014 var det 262 604 besøkende og av disse var det 60% barn og unge. Oslo Vitensenter er en del av Teknisk Museum som tilbyr lekende læring av vitenskaplige temaer.</p>
+
+            <h1 class="question">hvorfor?</h1>
+            <p class="description">Vitensenteret skulle utvide og lage en “Grønn sone” og var ute etter å finne mulige utstillinger de kunne stille ut. Vår oppgave var å lage en prototype i form av en interaktiv installasjon som svarer på prosjektets problemstilling</p>
+               
+
+            <!-- Image Slider-->
+            <div class="slider">
+                <div class="img-box">
+                    <img src="resources/museum/museum-kamera.jpeg" alt="museum-kamera" class="slider-img" />
+                </div>
+            </div>
+
+            <!-- Next and Prev Buttons-->
+            <div class="navigation-buttons">
+                <button class="button" onclick="prev()">←</button>
+                <button class="button" onclick="next()">→</button>
+            </div>
+
+
+            <h1 class="question">problemstillingen</h1>
+            <p class="description">“Green house effect: How can museum audieces learn what this is and gain some experiences related to the phenomenon”</p>
+
+            <h1 class="question">hvordan?</h1>
+            <p class="description">På oppfordring fra Vitensenteret tok vi faglig sett inspirasjon fra læreplanen for 1. vgs. Siden det er her drivhuseffekten for første gang er del av læreplanen. Hovedfokuset vårt var å lage en informativ og engasjerende utstilling som lærer de besøkende om drivhuseffekten. Vitensenteret var i tillegg opptatt av at læringen skal være på et lekende vis. Etter analyse av data samlet i en spørreundersøkelse fant vi mye som tydet på at hovedmålet til foreldre som besøkte Vitenseteret var å engasjere barna til å lære. Samtidig observerte vi oppførsel som tydet på at det kanskje var litt “for gøy”, og barna ikke hadde fokus på selve læredelen. Å lage en installasjon som er lærerik, inspirerende og ikke kun underholdene, slik at de yngste ikke blir ufokusert på læringen var en utfordring, men vi klarte det. Prototypen ble utviklet basert på metodologien - Spekulativ design.</p>
+            <p><br>Vi hadde flere konsepter som du kan lese og se video</p>
+            <br><div class="lenker">
+                <a class="project-button" target="_blank" href="resources/museum-designkonsepter.pdf">Designkonsepter ↗</a>
+                <a class="project-button" target="_blank" href="https://youtu.be/kym9sMSeRmM">Video av konsept av pintball-effekten ↗</a>
+            </div>
+             
+            <br><p>Er du nysgjerrig på hvordan jordkloden roterer, kan du se video: </p>
+            <br><a class="project-button" target="_blank" href="https://youtu.be/34OkRr-qznU">Jordkloden roterer ↗</a>
+        </div>
+
+        <footer>
+            <h2>.Bukalska</h2>
+            <section class="icons">
+                <img src="resources/icon-email.png" class="emails" alt="Send Mail" onclick="emailAnna()">
+                <img src="resources/icon-github.png" class="github" alt="GitHub" onclick="openGitHub()">
+                <img src="resources/icon-linkedin.png" class="linkedin" alt="LinkedIn" onclick="openLinkedin()">
+            </section>
+            <p class="footer-copyright">© 2021 Designet og kodet av Anna Maria Bukalska</p>
+        </footer>
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
