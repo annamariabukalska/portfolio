@@ -37,7 +37,7 @@
   background: linear-gradient(to top, #CDF8E0 60%, transparent 60%) no-repeat; }
 
 .title-red {
-  background: linear-gradient(to top, #DCDCDC 60%, transparent 60%) no-repeat; }
+  background: linear-gradient(to top, #d8c6c6 60%, transparent 60%) no-repeat; }
 
 .title-blue {
   background: linear-gradient(to top, #B5C7E2 60%, transparent 60%) no-repeat; }
@@ -184,27 +184,27 @@ body {
   .projects {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important; } }
 
-.projects {
+#projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 1rem;
   margin-top: 50px;
   padding: 0 32px; }
-  .projects .portfolio-preview {
+  #projects .portfolio-preview {
     background: #ffffff;
     overflow: hidden;
     box-shadow: 0px 1px 5px #00000014;
     border-radius: .5rem; }
-    .projects .portfolio-preview:hover {
+    #projects .portfolio-preview:hover {
       background: #CDF8E0; }
-    .projects .portfolio-preview .portfolio-preview-title {
+    #projects .portfolio-preview .portfolio-preview-title {
       font-size: 20pt;
       color: black;
       margin: .5rem 1rem; }
-    .projects .portfolio-preview .portfolio-preview-image {
+    #projects .portfolio-preview .portfolio-preview-image {
       width: 100%;
       margin-bottom: 8px; }
-    .projects .portfolio-preview .portfolio-preview-subtitle {
+    #projects .portfolio-preview .portfolio-preview-subtitle {
       color: #757575;
       font-size: 1rem;
       line-height: 1.5;

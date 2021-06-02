@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="shortcut icon" type="image/png" href="index.html" />
 	<link rel="icon" href="resources/favicon.png" />
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
 	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GJT9KR61J"></script>
 	<script>
@@ -21,6 +23,17 @@
 </head>
 
 <body>
+	<script>
+		var firebaseConfig = {
+			apiKey: "AIzaSyBSSfDL7WOZ1F2qD3OhATspxGRjOsj6baQ",
+			authDomain: "portfolio-ff959.firebaseapp.com",
+			projectId: "portfolio-ff959",
+			storageBucket: "portfolio-ff959.appspot.com",
+			messagingSenderId: "422808008563",
+			appId: "1:422808008563:web:1bec7249b9a22ad6cf3706"
+		};
+		firebase.initializeApp(firebaseConfig);
+	</script>
 	<main>
 		<nav id="navbar">
 			<a href="index.html" class="logo-link"><img src="resources/logo.png" class="logo" alt="Logo" /></a>
@@ -37,103 +50,16 @@
 		</nav>
 
 		<h1 id="top-info"></h1>
-		<div class="projects">
-			<a href="kunstplus.html">
-				<div class="portfolio-preview">
-					<img class="portfolio-preview-image" src="resources/kunstplus.png" alt="Prosjekt: Kunst Plus">
-					<p><span class="portfolio-preview-title title-pink">Kunst Pluss</span></p>
-					<p class="portfolio-preview-subtitle">Fra papirutgave til nettside.</p>
-				</div>
-			</a>
-
-			<a href="nav.html">
-				<div class="portfolio-preview">
-					<img class="portfolio-preview-image" src="resources/nav.png" alt="Prosjekt: NAV">
-					<p><span class="portfolio-preview-title title-pink">NAV</span></p>
-					<p class="portfolio-preview-subtitle">Det skal undersøkes og forstås hvordan et større informasjonssystem fungerer i en organisasjon.</p>
-				</div>
-			</a>
-
-			<a href="museum.html">
-				<div class="portfolio-preview">
-					<img class="portfolio-preview-image" src="resources/museum.png" alt="Prosjekt: Teknisk Museum - Vitensenteret">
-					<p><span class="portfolio-preview-title title-pink">Teknisk Museum</span></p>
-					<p class="portfolio-preview-subtitle">Formidle kunnskap om drivhuseffekten, atmosfæren, og vekke interesse for læring blant publikum.</p>
-				</div>
-			</a>
-
-			<a href="project.html">
-				<div class="portfolio-preview">
-					<img class="portfolio-preview-image" src="resources/apenhet.png" alt="Prosjekt: Åpenhet">
-					<p><span class="portfolio-preview-title title-green">Åpenhet</span></p>
-					<p class="portfolio-preview-subtitle">Prosjekt med interaktive presentasjoner og datavisualisering.
-					</p>
-				</div>
-			</a>
-
-			<a href="ikketaaltforgodfisk.html">
-				<div class="portfolio-preview">
-					<img class="portfolio-preview-image" src="resources/polarisering.png"
-						alt="Prosjekt: #ikketaaltforgodfisk - Polarisering">
-					<p><span class="portfolio-preview-title title-orange">#ikketaaltforgodfisk</span></p>
-					<p class="portfolio-preview-subtitle">Kampanjenettside om polarisering. Hvordan identifisere
-						fake-news?</p>
-				</div>
-			</a>
-
-			<a href="oslolokalt.html">
-				<div class="portfolio-preview">
-					<img class="portfolio-preview-image" src="resources/lokalbefolkning.png" alt="Prosjekt: osloLokalt">
-					<p><span class="portfolio-preview-title title-red">osloLokalt</span></p>
-					<p class="portfolio-preview-subtitle">Applikasjonen gir deg muligheten til å besøke steder som
-						Oslo-befolkingen mener er verdt å besøke.
-					</p>
-				</div>
-			</a>
-
-			<a href="snyltometer.html">
-				<div class="portfolio-preview">
-					<img class="portfolio-preview-image" src="resources/snyltometer/snyltometer-iphone.png"
-						alt="Prosjekt: Snylt-o-meter">
-					<p><span class="portfolio-preview-title title-blue">Snylt-o-meter</span>
-					<p>
-					<p class="portfolio-preview-subtitle">Spill 🕹 Hvordan snylte uten å gjøre staten konkurs?</p>
-				</div>
-			</a>
-			<a href="aftenposten.html">
-				<div class="portfolio-preview">
-					<img class="portfolio-preview-image" src="resources/aftenposten-iphone.jpg"
-						alt="Prosjekt: Aftenposten">
-					<p><span class="portfolio-preview-title title-blue">Aftenposten</span>
-					<p>
-					<p class="portfolio-preview-subtitle">Rett på sak. App for unge voksne.</p>
-				</div>
-			</a>
-			<a href="endometriose.html">
-				<div class="portfolio-preview">
-					<img class="portfolio-preview-image" src="resources/endometriose/skjerm-jente.png"
-						alt="Prosjekt: Endometriose">
-					<p><span class="portfolio-preview-title title-blue">Smerte</span>
-					<p>
-					<p class="portfolio-preview-subtitle">Veien til enklere liv med endometriose.</p>
-				</div>
-			</a>
-			<a href="breathe.html">
-				<div class="portfolio-preview">
-					<img class="portfolio-preview-image" src="resources/breathe-app-icon.png" alt="Prosjekt: Breathe">
-					<p><span class="portfolio-preview-title title-blue">Breathe</span>
-					<p>
-					<p class="portfolio-preview-subtitle">Applikasjonsutvikling - en elektron app som kan hjelpe med
-						stort eller smått i hverdagen til en bruker.</p>
-				</div>
-			</a>
+		<div id="projects">
+			
 		</div>
 
 		<section id="about-me">
 			<div class="text">
 				<h2>Om meg</h2>
 				<p>Jeg er <span class="title-green">interaksjonsdesigner</span> med <span
-						class="title-blue">bachelor</span> innenfor design, bruk og interaksjon fra Universitetet i
+						class="title-blue">bachelor</span>
+					innenfor design, bruk og interaksjon fra Universitetet i
 					Oslo. Jeg <span class="title-purple">elsker å forbedre hverdagen</span> til brukere og er opptatt av
 					å <span class="title-pink">designe</span> og <span class="title-pink2">teste gode interaktive
 						løsninger</span> som er universelt utformet.</p>
@@ -153,6 +79,7 @@
 			<p class="footer-copyright">© 2021 Designet og kodet av Anna Maria Bukalska</p>
 		</footer>
 	</main>
+	<script src="js/firebase.js"></script>
 	<script src="js/app.js"></script>
 </body>
 
