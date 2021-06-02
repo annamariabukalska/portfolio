@@ -92,25 +92,26 @@ footer {
 
 #navbar {
   display: grid;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  grid-template-columns: 1fr repeat(3, auto) 1fr;
-  grid-column-gap: 5px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
   justify-items: center;
   font-family: "Montserrat", serif;
   font-size: 1rem; }
   #navbar .logo {
     color: black;
-    width: 120px; }
-  #navbar .logo-link {
-    grid-column-start: 2; }
+    width: 120px;
+    transition: 0.2s all; }
+    #navbar .logo:hover {
+      transform: scale(0.95, 0.95); }
   #navbar .main-nav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    grid-column-start: 5;
+    padding: 12px;
+    border: 1px solid black;
+    margin-top: 16px;
     margin-left: auto;
-    margin-right: 32px; }
+    margin-right: auto; }
     #navbar .main-nav li {
       display: inline-block;
       padding-left: 10px;
@@ -121,10 +122,6 @@ footer {
   #navbar .nav-links {
     text-decoration: none;
     color: black; }
-
-@media screen and (max-width: 418px) {
-  #navbar {
-    grid-template-columns: repeat(1, auto) !important; } }
 
 .project-page {
   max-width: 160rem;
