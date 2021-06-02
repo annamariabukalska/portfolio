@@ -1,15 +1,24 @@
+firebase.initializeApp({
+    apiKey: "AIzaSyBSSfDL7WOZ1F2qD3OhATspxGRjOsj6baQ",
+    authDomain: "portfolio-ff959.firebaseapp.com",
+    projectId: "portfolio-ff959",
+    storageBucket: "portfolio-ff959.appspot.com",
+    messagingSenderId: "422808008563",
+    appId: "1:422808008563:web:1bec7249b9a22ad6cf3706"
+});
+
 const db = firebase.firestore();
 const projectsRef = db.collection("projects");
 
 // Inspirert av freecodecamp.org 
 
-projectsRef.get().then((database) => { 
+projectsRef.get().then((database) => {
     const data = database.docs.map((doc) => ({
         id: doc.id,
         ...doc.data()
     }));
 
-    data.map(function(project) {
+    data.map(function (project) {
         console.log(project);
 
         var link = document.createElement("a");
@@ -36,7 +45,7 @@ projectsRef.get().then((database) => {
         var subtitle = document.createElement("p");
         subtitle.innerText = project.subtitle;
         subtitle.className = "portfolio-preview-subtitle";
-        
+
         container.appendChild(image);
         container.appendChild(title);
         container.appendChild(subtitle);
@@ -47,4 +56,4 @@ projectsRef.get().then((database) => {
         projectsContainer.appendChild(link);
     });
 
-}) 
+})

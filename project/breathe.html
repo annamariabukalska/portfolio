@@ -11,12 +11,12 @@
     <link rel="icon" href="/resources/favicon.png" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GJT9KR61J"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'G-6GJT9KR61J');
-	</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6GJT9KR61J');
+    </script>
 </head>
 
 <body>
@@ -40,27 +40,47 @@
             </div>
             <div class="project-metadata-container">
                 <h2 class="project-tema">Applikasjonsutvikling
-                    <br>Programmering og algoritmisk tenkning</h2>
-                    <br>System APIs</h2>
-                    <br>Versjonshåndtering (GIT)</h2>
+                    <br>Programmering og algoritmisk tenkning
+                </h2>
+                <br>System APIs</h2>
+                <br>Versjonshåndtering (GIT)</h2>
 
                 <h3 class="project-category"></h3>
             </div>
             <div class="lenker">
-                <a class="project-button" target="_blank" href="https://github.com/annamariabukalska/tema-8/tree/master/temaoppgave-8/electron-svelte-breathe-app">GitHub-kode ↗</a>
+                <a class="project-button" target="_blank"
+                    href="https://github.com/annamariabukalska/tema-8/tree/master/temaoppgave-8/electron-svelte-breathe-app">GitHub-kode
+                    ↗</a>
                 <a class="project-button" target="_blank" href="/resources/breathe/plattform.png">Velg plattform ↗</a>
                 <a class="project-button" target="_blank" href="/resources/breathe/last-ned.png">Promotering ↗</a>
             </div>
-         
+
             <h1 class="question">om</h1>
-            <p class="description">En samling av meditasjonssanger som man kan lagre som favoritter og en påminnelse til å utføre en meditasjon, slik at man blir mer motivert til å puste i travelt hverdag. Personlig tilpasset meditasjon: skreddersy din meditasjon med veiledet innledning. Meditasjonspåminnelser hjelper deg å være oppmerksomt tilstede gjennom hele dagen. Målet er å planlegge og designe en desktop-applikasjon (til MacOS, Windows og Linux) med en enkel men tydelig funksjon. Slike applikasjoner kategoriseres som regel som «utility apps» (nytte apps). 
+            <p class="description">En samling av meditasjonssanger som man kan lagre som favoritter og en påminnelse til
+                å utføre en meditasjon, slik at man blir mer motivert til å puste i travelt hverdag. Personlig tilpasset
+                meditasjon: skreddersy din meditasjon med veiledet innledning. Meditasjonspåminnelser hjelper deg å være
+                oppmerksomt tilstede gjennom hele dagen. Målet er å planlegge og designe en desktop-applikasjon (til
+                MacOS, Windows og Linux) med en enkel men tydelig funksjon. Slike applikasjoner kategoriseres som regel
+                som «utility apps» (nytte apps).
             </p>
 
             <h1 class="question">hvem?</h1>
-            <p class="description">Applikasjon er rettet mot som trenger ro i hverdagen og påminnelser om å gjøre meditasjoner. Plattformer: Mac, Windows. Linux</p>
+            <p class="description">Applikasjon er rettet mot som trenger ro i hverdagen og påminnelser om å gjøre
+                meditasjoner. Plattformer: Mac, Windows. Linux</p>
 
             <h1 class="question">hvordan?</h1>
-            <p class="description">Når det gjelder implementering først var å dele skjermer i komponenter på en oversiktlig måte og med muligheter til videre redigering. Ved bruk av MoodButton med forskjellige id og forskjellige title. Id og title representerer en knapp og "humøret" man er i. Description tilsvarer beskrivelsen på skjermen. For å kunne lagre data har jeg brukt «localstorage». Men for at .svelte kunne «snakke» sammen må man bruke «import Navn from ‘./navn’» , svelte komponenter og Props. Jeg har importert også Router-SPA til å kunne bare påpeke hvilke side må åpne seg når vi klikker på et bestemt knapp. Ved brukt av Module Context Export til å bytte på lyd og bilder siden min applikasjon har det samme funksjoner men forskjellige lyd og bilder. Toggle Classes in Svelte Component var å kontrollere knapper som skal være active og ikke aktive, slik at dersom vi har aktiv skal den endre til et bestemt farge med on:click aktiv og = !active. Jeg har lagt til felles main og .button-grid inn i public global i steden for src. .button-grid er felles CSS for favoritter og start (menu). Men inn i main så skjuler jeg overflow-innhold fra venstre-høyre og fjerner markering. Se gjerne nærmere på koden i GitHub.</p>
+            <p class="description">Når det gjelder implementering først var å dele skjermer i komponenter på en
+                oversiktlig måte og med muligheter til videre redigering. Ved bruk av MoodButton med forskjellige id og
+                forskjellige title. Id og title representerer en knapp og "humøret" man er i. Description tilsvarer
+                beskrivelsen på skjermen. For å kunne lagre data har jeg brukt «localstorage». Men for at .svelte kunne
+                «snakke» sammen må man bruke «import Navn from ‘./navn’» , svelte komponenter og Props. Jeg har
+                importert også Router-SPA til å kunne bare påpeke hvilke side må åpne seg når vi klikker på et bestemt
+                knapp. Ved brukt av Module Context Export til å bytte på lyd og bilder siden min applikasjon har det
+                samme funksjoner men forskjellige lyd og bilder. Toggle Classes in Svelte Component var å kontrollere
+                knapper som skal være active og ikke aktive, slik at dersom vi har aktiv skal den endre til et bestemt
+                farge med on:click aktiv og = !active. Jeg har lagt til felles main og .button-grid inn i public global
+                i steden for src. .button-grid er felles CSS for favoritter og start (menu). Men inn i main så skjuler
+                jeg overflow-innhold fra venstre-høyre og fjerner markering. Se gjerne nærmere på koden i GitHub.</p>
 
             <!-- Image Slider-->
             <div class="slider">
@@ -74,9 +94,6 @@
                 <button class="button" onclick="prev()">←</button>
                 <button class="button" onclick="next()">→</button>
             </div>
-
-            
-
         </div>
 
         <footer>
@@ -92,6 +109,7 @@
     </main>
 
     <script src="/js/app.js"></script>
+    <script src="/js/slideshow.js"></script>
 </body>
 
 </html>
