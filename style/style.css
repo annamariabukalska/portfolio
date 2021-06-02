@@ -128,8 +128,7 @@ footer {
   display: flex;
   align-items: end;
   flex-flow: column;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 2em 8em;
   padding-bottom: 6rem;
   /* Slider med prosjektbilder */ }
   .project-page .project-title {
@@ -140,7 +139,9 @@ footer {
   .project-page .project-metadata-container {
     padding: 1rem;
     font-size: 1rem;
-    margin-left: 1rem;
+    border-left: 1px solid gray;
+    padding-left: 1rem;
+    margin-top: 1rem;
     margin-bottom: 3rem; }
     .project-page .project-metadata-container .project-category {
       color: #838383; }
@@ -165,6 +166,10 @@ footer {
     width: 80%; }
     .project-page .slider .img-box img {
       width: 100%; }
+
+@media screen and (max-width: 700px) {
+  .project-page {
+    margin: 2em 1rem; } }
 
 * {
   box-sizing: border-box;

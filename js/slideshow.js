@@ -1,19 +1,23 @@
-var slider_img = document.querySelector('.slider-img');
-var images = ['lokalbefolkning.png', 'apenhet.png', 'kunstplus.png'];
-var i = 0;
+let slider_img = document.querySelector('.slider-img');
+let selectedIndex = 0;
+let images = [
+    'lokalbefolkning.png', 
+    'apenhet.png', 
+    'kunstplus.png'
+];
 
 function prev() {
-    if (i <= 0) i = images.length;
-    i--;
+    if (selectedIndex <= 0) selectedIndex = images.length;
+    selectedIndex--;
     return setImg();
 }
 
 function next() {
-    if (i >= images.length - 1) i = -1;
-    i++;
+    if (selectedIndex >= images.length - 1) selectedIndex = -1;
+    selectedIndex++;
     return setImg();
 }
 
 function setImg() {
-    return slider_img.setAttribute('src', 'resources/' + images[i]);
+    return slider_img.setAttribute('src', '/resources/' + images[selectedIndex]);
 }
