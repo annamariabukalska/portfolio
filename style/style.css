@@ -122,6 +122,10 @@ footer {
     text-decoration: none;
     color: black; }
 
+@media screen and (max-width: 418px) {
+  #navbar {
+    grid-template-columns: repeat(1, auto) !important; } }
+
 .project-page {
   max-width: 160rem;
   display: flex;
@@ -176,20 +180,26 @@ body {
   body a {
     text-decoration: none; }
 
+.content-inset {
+  margin: 2em 8em; }
+
+@media screen and (max-width: 700px) {
+  .content-inset {
+    margin: 2em 1rem; } }
+
 #top-info {
   text-align: center;
   font-size: 1.5rem; }
 
 @media screen and (max-width: 418px) {
   .projects {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important; } }
+    grid-template-columns: repeat(1, auto) !important; } }
 
 #projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
-  margin-top: 50px;
-  padding: 0 32px; }
+  margin-top: 50px; }
   #projects .portfolio-preview {
     background: #ffffff;
     overflow: hidden;
