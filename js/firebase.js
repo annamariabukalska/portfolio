@@ -22,7 +22,7 @@ projectsRef.get().then((database) => {
         console.log(project);
 
         var link = document.createElement("a");
-        link.href = `/${project.link}.html`;
+        link.href = `${project.link}.html`;
 
         var container = document.createElement("div");
         container.className = "portfolio-preview";
