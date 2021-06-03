@@ -19,5 +19,5 @@ function next() {
 }
 
 function setImg() {
-    return slider_img.setAttribute('src', '/resources/' + images[selectedIndex]);
+    return slider_img.setAttribute('src', 'resources/' + images[selectedIndex]);
 }
