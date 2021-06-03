@@ -1,9 +1,9 @@
 let slider_img = document.querySelector('.slider-img');
 let selectedIndex = 0;
 let images = [
-    'lokalbefolkning.png', 
-    'apenhet.png', 
-    'kunstplus.png'
+    'apenhet/apenhet-bruker.jpg', 
+    'apenhet/apenhet-side3.png', 
+    'apenhet/apenhet-side2.png'
 ];
 
 function prev() {
