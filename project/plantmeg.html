@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosjekt: Plantmeg - Anna Maria Bukalska</title>
+    <meta name="description" content="En nettbutikk som inspirerer til å plante blomstrer.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" href="/resources/favicon.png" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GJT9KR61J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6GJT9KR61J');
+    </script>
+</head>
+
+<body>
+    <main>
+        <nav id="navbar">
+            <a href="/index.html" class="logo-link"><img src="/resources/logo.png" class="logo" alt="Logo" /></a>
+
+            <ul class="main-nav" id="js-menu">
+                <li id="kontakt">
+                    <a href="/#about-me" class="nav-links">Om meg</a>
+                </li>
+                <li>
+                    <a href="/resources/CV.pdf" target="_blank" class="nav-links">CV</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class=project-page>
+            <div>
+                <h1 class="project-title">Plantmeg</h1>
+            </div>
+            <div class="project-metadata-container">
+                <h2 class="project-tema">Nettbutikk, eCommerce
+                    <br>React
+                </h2>
+                <h3 class="project-category">Webdesign</h3>
+            </div>
+            <div class="lenker">
+                <a class="project-button" target="_blank" href="https://plantmeg.vercel.app/">Nettside i Vercel ↗</a>
+                <a class="project-button" target="_blank" href="https://github.com/annamariabukalska/plantmeg">GitHub↗</a>
+            </div>
+              <!-- Image Slider-->
+              <div class="slider">
+                <div class="img-box">
+                    <img src="/resources/plantmeg/plantmeg2.png" alt="prototype" class="slider-img" />
+                </div>
+            </div>
+
+            <h1 class="question">om</h1>
+            <p class="description">Det finnes mange nettbutikker, men ikke alle presenterer et god utvalg av produkter. Det er også flere butikker som ikke oppfyller UU-regler (Universell utforming). Mange har fortsatt ikke muligheten til å dra på butikken derfor trengs det gode og informative nettbutikker. 
+            </p>
+
+            <h1 class="question">hvem?</h1>
+            <p class="description">Målgruppen er alle som er planteintreserte. Nettsiden er mer tilpasset til UU (Universell utforming).
+            </p>
+
+            <h1 class="question">hvorfor?</h1>
+            <p class="description">Jeg har valgt dette tema etter at jeg har vært selv frustrert over nettbutikker som har ingen opplysninger over betalingmåter eller leveringsmåter. Leveringsmåter viser når man går videre til betalingsdelen, men da oppdatet jeg er deres leveringsmåter passer ikke helt for meg. Jeg endte med at jeg brukte tid med å finne produkter som jeg får ikke kjøpt.</p>
+
+
+            <h1 class="question">hvordan?</h1>
+            <p class="description">
+                Løsningen er implementert i React. Nettsiden er responsivt og er SPA. Det betyr at sidene øaster seg veldig fort. Implementerings-koden finnes på GitHub, mens for å kunne publisere prosjektet valgte jeg Vercel. Vercel er en tjeneste for frontend-utviklere som gjør at nettsiden blir bygget og tjengeliggjort på en egen adresse. Jeg brukte også React-Router-bibliotekket, samt React Props og React Components. 
+            </p>
+        </div>
+
+        <footer>
+            <h2>.Bukalska</h2>
+            <section class="icons">
+                <img src="/resources/icon-email.png" class="emails" alt="Send Mail" onclick="emailAnna()">
+                <img src="/resources/icon-github.png" class="github" alt="GitHub" onclick="openGitHub()">
+                <img src="/resources/icon-linkedin.png" class="linkedin" alt="LinkedIn" onclick="openLinkedin()">
+            </section>
+            <p class="footer-copyright">© 2021 Designet og kodet av Anna Maria Bukalska</p>
+        </footer>
+
+    </main>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/slideshow.js"></script>
+</body>
+
+</html>
