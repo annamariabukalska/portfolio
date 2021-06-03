@@ -209,8 +209,7 @@ body {
     border-radius: .5rem;
     transition: 0.12s all; }
     #projects .portfolio-preview:hover {
-      opacity: 0.65;
-      background: #252525; }
+      opacity: 0.65; }
     #projects .portfolio-preview .portfolio-preview-title {
       font-size: 20pt;
       color: black;
