@@ -205,15 +205,24 @@ body {
   #projects .portfolio-preview {
     background: #ffffff;
     overflow: hidden;
-    box-shadow: 0px 1px 5px #00000014;
     border-radius: .5rem;
     transition: 0.12s all; }
     #projects .portfolio-preview:hover {
-      opacity: 0.65; }
+      opacity: 1.0;
+      box-shadow: 0px 1px 5px #00000014; }
     #projects .portfolio-preview .portfolio-preview-title {
       font-size: 20pt;
       color: black;
       margin: .5rem 1rem; }
+    #projects .portfolio-preview .portfolio-preview-category {
+      background: #B5C7E2;
+      color: #000d1e;
+      display: inline-block;
+      border-radius: 20px;
+      font-size: 9pt;
+      margin-left: 1rem;
+      margin-top: 10px;
+      padding: 4px 10px; }
     #projects .portfolio-preview .portfolio-preview-image {
       width: 100%;
       margin-bottom: 8px; }

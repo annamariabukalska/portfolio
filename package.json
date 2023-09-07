@@ -9,7 +9,7 @@
       "start": "npm run scss && npm run open && -- --watch"
    },
    "dependencies": {
-      "node-sass": "^5.0.0"
+      "node-sass": "^9.0.0"
    },
    "author": "Anna Maria Bukalska",
    "devDependencies": {

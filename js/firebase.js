@@ -8,7 +8,8 @@ firebase.initializeApp({
 });
 
 const db = firebase.firestore();
-const projectsRef = db.collection("projects");
+const projectsRef = db.collection("projects").orderBy("order", "desc");
+// projectsRef.orderBy("order");
 
 // Inspirert av freecodecamp.org 
 
@@ -38,8 +39,12 @@ projectsRef.get().then((database) => {
         var titleSpan = document.createElement("span");
         titleSpan.innerText = project.title;
         titleSpan.classList.add("portfolio-preview-title");
-        titleSpan.classList.add(`title-${project.color}`);
+        // titleSpan.classList.add(`title-${project.color}`);
         title.appendChild(titleSpan);
+
+        var category = document.createElement("span");
+        category.innerText = project.category;
+        category.className = "portfolio-preview-category";
 
         // Undertekst
         var subtitle = document.createElement("p");
@@ -48,6 +53,7 @@ projectsRef.get().then((database) => {
 
         container.appendChild(image);
         container.appendChild(title);
+        container.appendChild(category);
         container.appendChild(subtitle);
 
         link.appendChild(container);
