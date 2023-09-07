@@ -34,6 +34,24 @@ body {
 #top-info {
 	text-align: center;
 	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+#bio {
+	background: white;
+	padding: 2rem;
+	display: flex;
+	border-radius: .5rem;
+	text-align: center;
+	justify-content: center;
+
+	.bio-container {
+		max-width: 500px;
+	}
+
+	.memoji {
+		width: 120px;
+	}
 }
 
 @media screen and (max-width: $mobile) {
