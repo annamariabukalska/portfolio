@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosjekt: BankID - Anna Maria Bukalska</title>
+    <meta name="description" content="Eget prosjekt der jeg har jobbet med hvordan BankID kan gjøre signering bedre. Figma variables, interaktiv prototype.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="resources/favicon.png" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GJT9KR61J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6GJT9KR61J');
+    </script>
+</head>
+
+<body>
+    <main>
+        <nav id="navbar">
+            <a href="index.html" class="logo-link"><img src="resources/logo.png" class="logo" alt="Logo" /></a>
+
+            <ul class="main-nav" id="js-menu">
+                <li id="kontakt">
+                    <a href="./#about-me" class="nav-links">Om meg</a>
+                </li>
+                <li>
+                    <a href="resources/CV.pdf" target="_blank" class="nav-links">CV</a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@annamariabukalska" target="_blank" class="nav-links">Blogg ↗</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class=project-page>
+            <div>
+                <h1 class="project-title">BankID</h1>
+            </div>
+            <div class="project-metadata-container">
+                <h2 class="project-tema">Interaktiv løsning
+                    <br>Digital prototyping og konspet
+                </h2>
+                <h3 class="project-category">iOS</h3>
+            </div>
+            <div class="lenker">
+                <a class="project-button" target="_blank" href=" https://www.figma.com/proto/zPyzndbldAsbkWQtENdUiT/BankID?page-id=5%3A89&type=design&node-id=9-106&viewport=484%2C615%2C0.38&t=UnghroVrun8aGcJi-1&scaling=min-zoom&starting-point-node-id=9%3A106&mode=design">Prototype ↗</a>
+                <a class="project-button" target="_blank"
+                    href="https://www.figma.com/file/zPyzndbldAsbkWQtENdUiT/BankID?type=design&node-id=4%3A75&mode=design&t=0t00nKXqg43T9niP-1">Konsept og analyse av sagens løsning
+                    ↗</a>
+            </div>
+            <!-- Image Slider-->
+            <div class="slider">
+                <div class="img-box">
+                    <img src="resources/bankid/BankID - Signeringsflyt akseptert.png" alt="prototype" />
+                </div>
+            </div>
+
+            <h1 class="question">konsept</h1>
+            <p class="description">
+            </p>
+
+            <h1 class="question">hvem?</h1>
+            <p class="description">Signer viktige dokumenter enkelt og sikkert med BankID-elektronisk signering. Det er to typer elektronisk signering:
+            enkel og avansert. Enkel signering kan være fingeravtrykk på skjerm eller kopiert navnetrekk. Avansert signering har
+            strengere krav: unik identifikasjon, kontroll over midlene, og detektering av endringer. BankID gir avansert signatur
+            som er sikker og juridisk bindende. Det beskytter mot forfalskning og sikrer integriteten til dokumentet. Valget mellom
+            enkel og avansert signering avhenger av risikoen, med BankID som et trygt alternativ for høyrisikosituasjoner.
+            </p>
+
+            <h1 class="question">hvordan?</h1>
+            <p class="description">Vi setter opp hypotesedrevet utvikling som:
+                1. BankID-virker tryggere enn SMS/epost fra tjenester
+
+                2. Alt samlet på ett sted og mer oversiktlig for brukeren og det er vanskelig å finne frem tidligere signerte avtaler
+                
+                3.Å bruke BankID brand gir økt følelse av trygghet 
+
+                Vi setter også mål og suksesskriterier for prosjektet. 
+            </p>
+
+            <h1 class="question">problemstillingen</h1>
+            <p class="description">
+                BankID tilbyr ikke idag en endelig løsning, og derfor opplever vi ulike brukeropplevelser når vi signerer med
+                BankID. Når en leverandør tar vår signeringsløsning i bruk, bygger de en brukerflyt rundt signeringsløsningen vår.
+                Tar for oss en scenario når en student skal godkjenne dokumenter ifølge Lånekassen som har nettopp fått innviglet Lånesøknaden:
+
+                1. Studenten får SMS eller e-post fra Lånekassen om at det er en avtale til signering på lanekassen.no
+                2. Studenten logger seg inn på lanekassen.no (via Idporten)
+                3. I postkassen ligger det en avtale om støtte som skal signeres
+                4. Studenten kan lese avtalen i postkassen, før de går til signering
+                5. Studenten kommer inn i signeringsflyten, i en tjeneste levert av Posten Norge
+                6. Først nå kommer studenten til BankID eSigneringsløsning
+                7. Når studenten har fullført signeringen kommer de tilbake til en kvitteringsside på
+                lanekassen.no som sier at avtalen er signert og kan finnes igjen i postkassen.            </p>
+
+            <h1 class="question">Undersøke problem og behov samt analyse</h1>
+            <p class="description">
+               Vi må skape gode brukeropplevelser som brukbarhetsfaktorer(usebility), nyttighetsfaktorer(usefullness) og emosjonelle faktorer. Vi finner også smertepunktet på mobil og desktop som er blant annet vanskelig å navigere seg - man må flytte på skjermen for å se videre-knappen, må scrolles for å se "lagre-knappen" i flere skjermbilder. Universiell utforming er ikke tilfredstilt med 200% zoom. 
+            </p>
+        </div>
+
+        <footer>
+            <h2>.Bukalska</h2>
+            <section class="icons">
+                <img src="resources/icon-email.png" class="emails" alt="Send Mail" onclick="emailAnna()">
+                <img src="resources/icon-github.png" class="github" alt="GitHub" onclick="openGitHub()">
+                <img src="resources/icon-linkedin.png" class="linkedin" alt="LinkedIn" onclick="openLinkedin()">
+            </section>
+            <p class="footer-copyright">© 2021 Designet og kodet av Anna Maria Bukalska</p>
+        </footer>
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
