@@ -5,6 +5,10 @@
     flex-flow: column;
     margin: 2em 8em;
     padding-bottom: 6rem;
+    
+    .img-box img {
+        border-radius: 12px;
+    }
 
     .project-title {
         font-size: 3rem;
