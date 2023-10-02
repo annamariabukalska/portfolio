@@ -132,6 +132,8 @@ footer {
   margin: 2em 8em;
   padding-bottom: 6rem;
   /* Slider med prosjektbilder */ }
+  .project-page .img-box img {
+    border-radius: 12px; }
   .project-page .project-title {
     font-size: 3rem;
     font-weight: bolder;
